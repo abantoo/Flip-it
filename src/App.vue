@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black h-screen w-screen">
     <NavBar/>
-    <RouterView class="pt-16 text-white"/>
+    <RouterView class="pt-4 text-white"/>
   </div>
 </template>
 

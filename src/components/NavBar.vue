@@ -8,7 +8,7 @@
             </RouterLink>
             <div class="text-xl flex items-center justify-between gap-8 text-white">
                 <RouterLink 
-                    to="/home" 
+                    to="/" 
                     class="hover:text-amber-300 hover:border hover:border-amber-300 hover:rounded p-2 hover:transition-all"
                     :class="{'text-amber-300':router.currentRoute.value.name == 'home'}"
                 > 
