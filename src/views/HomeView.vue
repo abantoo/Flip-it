@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1 class="text-center text-2xl">Welcome to Flip it BD 🖕</h1>
+    <div class="px-8">
+        <h1 class="text-center text-2xl">Welcome to Flip it BD</h1>
         <h1 class="text-xl text-amber-300">Featured</h1>
         <div class="w-full h-0.5 bg-amber-300 mt-2"></div>
         <div class="flex items-center justify-center w-full pt-4 gap-3">
