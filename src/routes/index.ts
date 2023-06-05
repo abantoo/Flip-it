@@ -15,7 +15,12 @@ import {
       path: '/about',
       name: 'about',
       component: () => import("../views/AboutUs.vue")
-    }
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'Error',
+      component: () => import('../views/ErrorPage.vue'),
+    },
   ]
   
   const router = createRouter({
