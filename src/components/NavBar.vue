@@ -2,7 +2,7 @@
     <nav>
         <div class="flex items-center justify-between h-18 py-4 px-8">
             <RouterLink 
-                    to="/home"
+                    to="/"
                 > 
                 <img class="w-16" src="../../public/flip_it.png" alt="">
             </RouterLink>
