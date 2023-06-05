@@ -3,7 +3,7 @@
         <h1 class="text-center text-2xl">Welcome to <span class="text-amber-300">Flip it BD</span></h1>
         <h1 class="text-xl text-amber-300">Featured</h1>
         <div class="w-full h-0.5 bg-amber-300 mt-2"></div>
-        <div class="flex items-center justify-center w-full pt-4 gap-3">
+        <div class="flex items-center justify-center w-full pt-4 gap-2 md:gap-6">
             <FeaturedCard class="w-1/5" image="https://www.startech.com.bd/image/cache/catalog/monitor/acer/v196hql/acer-v196hql-monitor-500x500.JPG" title="Monitors"/>
             <FeaturedCard class="w-1/5" image="https://computerimporter.com/wp-content/uploads/2022/03/VENG_LPX_BLK_01-500x500-1.png" title="Rams"/>
             <FeaturedCard class="w-1/5" image="https://www.startech.com.bd/image/cache/catalog/casing-cooler/deepcool/xfan-80/xfan-80-01-228x228.jpg" title="Cooler"/>
