@@ -4,11 +4,11 @@
         <h1 class="text-xl text-amber-300">Featured</h1>
         <div class="w-full h-0.5 bg-amber-300 mt-2"></div>
         <div class="flex items-center justify-center w-full pt-4 gap-3">
-            <div class="w-1/3 h-36 bg-amber-300 rounded">1</div>
-            <div class="w-1/3 h-36 bg-red-500 rounded">1</div>
-            <div class="w-1/3 h-36 bg-sky-300 rounded">1</div>
-            <div class="w-1/3 h-36 bg-amber-300 rounded">1</div>
-            <div class="w-1/3 h-36 bg-amber-300 rounded">1</div>
+            <FeaturedCard class="w-1/5" image="https://www.startech.com.bd/image/cache/catalog/monitor/acer/v196hql/acer-v196hql-monitor-500x500.JPG" title="Monitors"/>
+            <FeaturedCard class="w-1/5" image="https://computerimporter.com/wp-content/uploads/2022/03/VENG_LPX_BLK_01-500x500-1.png" title="Rams"/>
+            <FeaturedCard class="w-1/5" image="https://www.startech.com.bd/image/cache/catalog/casing-cooler/deepcool/xfan-80/xfan-80-01-228x228.jpg" title="Cooler"/>
+            <FeaturedCard class="w-1/5" image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDoP85dOoSYHDziDfVxfhJEk-9HDN8wCKNg&usqp=CAU" title="Mobo"/>
+            <FeaturedCard class="w-1/5" image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Vv4hL1snfGCgnH2QAgkjvti9wpwmArvIm97updWAaWzjauLjmkXc9zWmLgEE_gN3W1w&usqp=CAU" title="Processors"/>
         </div>
         <h1 class="text-xl text-amber-300 mt-8">Our Products</h1>
         <div class="w-full h-0.5 bg-amber-300 mt-2"></div>
@@ -71,4 +71,5 @@
 
 <script setup lang="ts">
 import ItemsCard from '../components/ItemsCard.vue';
+import FeaturedCard from '../components/FeaturedCard.vue';
 </script>
