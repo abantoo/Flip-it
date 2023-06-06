@@ -14,39 +14,32 @@
         <div class="w-full h-0.5 bg-amber-300 mt-2"></div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-4 gap-3">
             <ItemsCard 
-                image="https://cdn.gaminggorilla.com/wp-content/uploads/2022/06/Gigabyte-X570-AORUS-Pro-WIFI-Motherboard-Review.jpg"
-                title="Gigabyte X570 AORUS Pro WIFI Motherboard"
-                price="23000 tk"
+                image="https://scontent.fdac138-2.fna.fbcdn.net/v/t1.15752-9/348354742_166665499705694_4901285852113542858_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=NVXJiEjR6sgAX-9OXNl&_nc_ht=scontent.fdac138-2.fna&oh=03_AdQUQUxVWcb4davj7fvS9vjA77aWL_bfT_uOXr-1Nlup-g&oe=64A60047"
+                title="Full PC"
+                price="35000 tk"
                 condition="Used"
-                description="Almost new item, collected and verified by our expert team at Flip it BD"
+                description="Used for 4 years, verified by our team at Flip it BD"
                 :verified="true"
             />
             <ItemsCard 
+                image="https://www.reckoncomputers.co.in/assets/uploads/25f8e52f7a1057b4.webp"
+                title="Cooler Master MWE GOLD 650 FULLY MODULAR"
+                price="5000 tk"
+                condition="Used"
+                description="Used for around 1 year."
+                :verified="true"
+            />
+
+            <ItemsCard 
                 image="https://www.getsview.com/wp-content/uploads/2019/07/Source-List-of-Used-pc-parts-buy-and-sell-in-Bangladesh.jpg"
                 title="Sapphire HD 7770"
-                price="11000 tk"
+                price="7000 tk"
                 condition="Used"
                 description="Used for 2 years, collected and fixed by our expert team at Flip it BD"
                 :verified="true"
             />
 
-            <ItemsCard 
-                image="https://images.olx.com.kw/thumbnails/1058879-240x180.jpeg"
-                title="Evga GPU"
-                price="9000 tk"
-                condition="Used"
-                description="Used for 6 years, dead, died because of a lightning strike"
-                :verified="false"
-            />
-
-            <ItemsCard 
-                image="https://www.reckoncomputers.co.in/assets/uploads/25f8e52f7a1057b4.webp"
-                title="Cooler Master MWE GOLD 650 FULLY MODULAR"
-                price="9500 tk"
-                condition="New"
-                description="New item"
-                :verified="true"
-            />
+            
 
             <ItemsCard 
                 image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkFraYrzBhZqQ8NJg0J8BQxpmaSeaIgu3PL1TF_XNuEbXpP9tnsb7dmPyCThwAbwmqIoI&usqp=CAU"
@@ -60,7 +53,7 @@
             <ItemsCard 
                 image="https://media.karousell.com/media/photos/products/2022/12/7/used_pc_parts_lot_1670430167_c469d146_progressive"
                 title="Intel i3-10100f"
-                price="7000 tk"
+                price="4000 tk"
                 condition="Used"
                 description="Used for 3 years, overheats frequently"
                 :verified="false"
