@@ -1,4 +1,5 @@
-<div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+<template>
+  <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
     <div class="flex flex-col">
       <span class="countdown font-mono text-5xl">
         <span style="--value:15;"></span>
@@ -24,3 +25,4 @@
       sec
     </div>
   </div>
+</template>
