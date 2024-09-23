@@ -6,7 +6,7 @@
         </div>
         <div class="flex flex-col gap-2 m-4">
             <h1 class="text-amber-300 text-2xl">Contact us</h1>
-            <h2>FlipitBd1584@gmail.com</h2>
+            <h2>Contact is not available at this moment. Sorry :)</h2>
         </div>
     </div>
     

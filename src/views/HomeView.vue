@@ -1,7 +1,6 @@
 <template>
     <div class="px-8">
         <h1 class="text-center text-2xl">Welcome to <span class="text-amber-300">Flip it BD</span></h1>
-        <TimerCard />
         <h1 class="text-xl text-amber-300">Featured</h1>
         <div class="w-full h-0.5 bg-amber-300 mt-2"></div>
         <div class="flex items-center justify-center w-full pt-4 gap-2 md:gap-6">
@@ -65,5 +64,4 @@
 <script setup lang="ts">
 import ItemsCard from '../components/ItemsCard.vue';
 import FeaturedCard from '../components/FeaturedCard.vue';
-import TimerCard from '../components/TimerCard.vue';
 </script>
