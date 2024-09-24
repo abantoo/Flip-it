@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between h-18 py-4 px-8 bg-black my-2 rounded-3xl">
+  <nav class="flex items-center justify-between h-18 py-4 px-8 bg-slate-800 my-2 rounded-3xl">
     <RouterLink to="/">
       <img class="w-12" src="/flip_it.png" alt="flip-it-bd" />
     </RouterLink>
