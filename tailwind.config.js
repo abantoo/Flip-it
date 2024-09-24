@@ -8,5 +8,8 @@ export default {
       },
     },
   },
+  daisyui: {
+    themes: ["light", "dark", "luxury", "retro", "corporate", "cyberpunk"],
+  },
   plugins: [require("daisyui")],
 };

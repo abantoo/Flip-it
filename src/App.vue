@@ -1,7 +1,9 @@
 <template>
-  <div class="bg-black w-screen font-montserrat">
-    <NavBar/>
-    <RouterView class="pt-4 text-white pb-4 min-h-[calc(100vh-125.5px)]"/>
+  <div class="flex flex-col items-center min-h-screen font-montserrat" data-theme="light">
+    <NavBar class="container"/>
+    <div class="container bg-red-300">
+      <RouterView/>
+    </div>
   </div>
 </template>
 
