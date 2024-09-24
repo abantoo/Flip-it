@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center min-h-screen font-montserrat" data-theme="light">
-    <NavBar class="container"/>
-    <div class="container">
+    <NavBar class="fixed container"/>
+    <div class="container pt-32">
       <RouterView/>
     </div>
   </div>
