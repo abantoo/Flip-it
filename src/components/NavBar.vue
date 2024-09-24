@@ -4,7 +4,7 @@
             <RouterLink 
                     to="/"
                 > 
-                <img class="w-16" src="../../public/flip_it.png" alt="">
+                <img class="w-16" src="/flip_it.png" alt="">
             </RouterLink>
             <div class="text-xl flex items-center justify-between gap-8 text-white">
                 <RouterLink 
