@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center min-h-screen font-montserrat" data-theme="light">
-    <NavBar class="fixed container"/>
+    <NavBar />
     <div class="container pt-32">
       <RouterView/>
     </div>

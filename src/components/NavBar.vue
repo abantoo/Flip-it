@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between h-18 py-4 px-8 bg-slate-800 my-2 rounded-3xl shadow-md shadow-slate-400 mx-4">
+  <nav class="flex items-center justify-between h-18 py-4 px-8 bg-black shadow-md shadow-slate-400 w-full">
     <RouterLink to="/">
       <img class="w-12" src="/flip_it.png" alt="flip-it-bd" />
     </RouterLink>
@@ -22,11 +22,21 @@
       >
         About
       </RouterLink>
+      <div>
+        <PhShoppingCart :size="32" />
+      </div>
+      <div>
+        <PhUserCircle :size="32" />
+      </div>
     </div>
   </nav>
 </template>
 
 <script setup lang="ts">
 import { useRouter } from "vue-router";
+import {
+  PhShoppingCart,
+  PhUserCircle,
+} from '@phosphor-icons/vue';
 const router = useRouter();
 </script>
