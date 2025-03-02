@@ -21,36 +21,7 @@
 
             <!-- Contact Us -->
             <div>
-                <h1>Stay Connected</h1>
-                <div>
-                    <h1>Head Office</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Eum facilis voluptatem omnis vitae accusantium ex nihil ab fugiat officia quisquam 
-                        ea similique optio dolor sed dicta temporibus perferendis, nulla cupiditate?
-                    </p>
-                </div>
-                <div>
-                    <h1>Corporate Office</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Eum facilis voluptatem omnis vitae accusantium ex nihil ab fugiat officia quisquam 
-                        ea similique optio dolor sed dicta temporibus perferendis, nulla cupiditate?
-                    </p>
-                </div>
-
-                <div>
-                    <h1>Distribution Center</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Eum facilis voluptatem omnis vitae accusantium ex nihil ab fugiat officia quisquam 
-                        ea similique optio dolor sed dicta temporibus perferendis, nulla cupiditate?
-                    </p>
-                </div>
-
-                <div>
-                    email: random-email@email.com
-                </div>
+                <StayConnected />
             </div>
         </div>
         <p class="text-gray-300 text-sm">
@@ -58,3 +29,7 @@
         </p>
     </div>
 </template>
+
+<script lang="ts" setup>
+import StayConnected from './Footer/StayConnected.vue';
+</script>
