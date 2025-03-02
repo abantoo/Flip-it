@@ -1,5 +1,5 @@
 <template>
-  <h1>Stay Connected</h1>
+  <h1 class="text-2xl font-bold">Stay Connected</h1>
   <div>
     <h1>Head Office</h1>
     <p>

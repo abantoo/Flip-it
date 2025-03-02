@@ -1,9 +1,9 @@
 <template>
-    <div class="bg-slate-900 w-full flex flex-col items-center justify-center">
-        <div class="container flex items-center justify-between text-white">
+    <div class="bg-slate-900 w-full flex flex-col items-center justify-center py-4">
+        <div class="container px-8 py-4 mb-4 grid grid-cols-3 text-white">
             <!-- Subscribe -->
             <div class="text-white">
-                <h1>Subscribe To Our Newsletter</h1>
+                <h1 class="text-2xl font-bold">Subscribe To Our Newsletter</h1>
                 <h2>Want to stay updated about current listings and learn about current market?</h2>
                 <h2>Subscribe to our NewsLetter today</h2>
 
@@ -11,8 +11,8 @@
             </div>
 
             <!-- About Us -->
-            <div>
-                <h1>About Us</h1>
+            <div >
+                <h1 class="text-2xl font-bold">About Us</h1>
                 <a href="">Our Team</a>
                 <a href="">Career</a>
                 <a href="">Online Delivery</a>
