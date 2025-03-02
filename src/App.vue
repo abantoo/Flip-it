@@ -4,10 +4,12 @@
     <div class="container pt-8">
       <RouterView/>
     </div>
+    <MainFooter />
   </div>
 </template>
 
 <script setup lang="ts">
 import NavBar from './components/NavBar.vue';
+import MainFooter from './components/MainFooter.vue';
 </script>
 
