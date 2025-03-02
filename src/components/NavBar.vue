@@ -1,6 +1,6 @@
 <template>
-  <nav class="flex items-center justify-center bg-black shadow-md shadow-slate-400 w-full h-20">
-    <div class="container flex items-center justify-between bg-black shadow-md w-full">
+  <nav class="flex items-center justify-center bg-slate-900 shadow-md shadow-slate-400 w-full h-20">
+    <div class="container flex items-center justify-between bg-slate-900 shadow-md w-full">
       <RouterLink to="/">
         <img class="h-14" src="/flip_it.png" alt="flip-it-bd" />
       </RouterLink>
