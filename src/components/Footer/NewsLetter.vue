@@ -4,6 +4,9 @@
     <h2>Want to stay updated about current listings and learn about current market?</h2>
     <h2>Subscribe to our NewsLetter today</h2>
 
-    <button class="btn btn-warning mt-2">Subscribe</button>
+    <div class="flex items-center justify-between mt-4">
+      <input type="text" class="input w-full mr-2">
+      <button class="btn btn-warning">Subscribe</button>
+    </div>
   </div>
 </template>
