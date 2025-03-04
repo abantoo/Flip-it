@@ -4,7 +4,7 @@
   >
     <div class="container px-8 py-4 mb-4 flex justify-between text-white grow">
       <div class="px-2">
-        <img class="w-32" src="../../public/flip_it.png" alt="Flip It" />
+        <img class="w-32" src="/flip_it.png" alt="Flip It" />
       </div>
       <!-- Subscribe -->
       <NewsLetter class="max-w-96" />
