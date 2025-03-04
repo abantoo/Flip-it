@@ -1,35 +1,27 @@
 <template>
-    <div class="bg-slate-900 w-full flex flex-col items-center justify-center py-4">
-        <div class="container px-8 py-4 mb-4 grid grid-cols-3 text-white">
-            <!-- Subscribe -->
-            <div class="text-white">
-                <h1 class="text-2xl font-bold">Subscribe To Our Newsletter</h1>
-                <h2>Want to stay updated about current listings and learn about current market?</h2>
-                <h2>Subscribe to our NewsLetter today</h2>
+  <div
+    class="bg-slate-900 w-full flex flex-col items-center justify-center py-4"
+  >
+    <div class="container px-8 py-4 mb-4 flex justify-between text-white grow">
+      <div class="px-2">
+        <img class="w-32" src="../../public/flip_it.png" alt="Flip It" />
+      </div>
+      <!-- Subscribe -->
+      <NewsLetter class="max-w-96" />
 
-                <button class="btn btn-warning">Subscribe</button>
-            </div>
-
-            <!-- About Us -->
-            <div >
-                <h1 class="text-2xl font-bold">About Us</h1>
-                <a href="">Our Team</a>
-                <a href="">Career</a>
-                <a href="">Online Delivery</a>
-                <a href="">Blog</a>
-            </div>
-
-            <!-- Contact Us -->
-            <div>
-                <StayConnected />
-            </div>
-        </div>
-        <p class="text-gray-300 text-sm">
-            ©{{ new Date().getFullYear() }} Flip-IT bd Ltd | All rights reserved.
-        </p>
+      <!-- About Us -->
+      <AboutUs />
+      <!-- Contact Us -->
+      <StayConnected />
     </div>
+    <p class="text-gray-300 text-sm">
+      ©{{ new Date().getFullYear() }} Flip-IT bd Ltd | All rights reserved.
+    </p>
+  </div>
 </template>
 
 <script lang="ts" setup>
-import StayConnected from './Footer/StayConnected.vue';
+import StayConnected from "./Footer/StayConnected.vue";
+import AboutUs from "./Footer/AboutUs.vue";
+import NewsLetter from "./Footer/NewsLetter.vue";
 </script>
