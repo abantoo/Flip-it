@@ -1,6 +1,6 @@
 <template>
   <div class="flex bg-violet-50 flex-col items-center min-h-screen font-montserrat" data-theme="light">
-    <NavBar class="sticky top-0"/>
+    <NavBar class="sticky top-1.5"/>
     <div class="container py-8">
       <RouterView/>
     </div>
