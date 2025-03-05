@@ -5,7 +5,7 @@
     <h2>Subscribe to our NewsLetter today</h2>
 
     <div class="flex items-center justify-between mt-4">
-      <input type="text" class="input w-full mr-2">
+      <input type="text" class="input w-full mr-2 text-black" placeholder="Email Address">
       <button class="btn btn-warning">Subscribe</button>
     </div>
   </div>
