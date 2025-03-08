@@ -1,64 +1,31 @@
 <template>
-  <nav class="flex items-center justify-center bg-slate-900 shadow-md shadow-slate-400 container mt-3 rounded h-[70px] lg:px-10">
-    <div class="flex items-center justify-between bg-slate-900 shadow-md w-full">
-      <RouterLink to="/">
-        <img class="h-12" src="/flip_it_text.png" alt="flip-it-bd" />
-      </RouterLink>
-
-      <div class="flex items-center justify-center">
-          <input type="search" class="input !grow lg:w-[500px] h-8 mr-2 input-warning" placeholder="Search for product" />
-          <button 
-            type="button" 
-            class="btn btn-warning min-h-8 h-[34px] flex items-center justify-center"
-          >
-            <svg
-              class="size-4" 
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g>
-            </svg>
-          </button>
-      </div>
-
-      <div class="text-lg flex items-center justify-between gap-4 text-white">
-        <RouterLink
-          to="/"
-          class="hover:text-amber-300 border border-transparent hover:border-amber-300 hover:rounded p-1 hover:transition-all"
-          :class="{
-            'text-amber-300': router.currentRoute.value.name == 'home',
-          }"
-        >
-          Home
-        </RouterLink>
-
-        <RouterLink
-          to="/offers"
-          class="hover:text-amber-300 border border-transparent hover:border-amber-300 hover:rounded p-1 hover:transition-all"
-          :class="{
-            'text-amber-300': router.currentRoute.value.name == 'about',
-          }"
-        >
-          Offers
-        </RouterLink>
-
-        <RouterLink
-          to="/about"
-          class="hover:text-amber-300 border border-transparent hover:border-amber-300 hover:rounded p-1 hover:transition-all"
-          :class="{
-            'text-amber-300': router.currentRoute.value.name == 'about',
-          }"
-        >
-          About
-        </RouterLink>
-        
-        <div>
-          <PhShoppingCart :size="28" />
+  <header class="w-full sticky top-0 z-50 bg-slate-900 border-b border-slate-800 shadow-xl">
+    <!-- Top Bar -->
+    <div class="bg-slate-950 text-white py-1.5 px-4 lg:px-10 hidden md:block">
+      <div class="max-w-[1440px] mx-auto flex justify-between items-center text-[10px] lg:text-xs font-medium tracking-wide uppercase">
+        <div class="flex gap-6">
+          <span class="flex items-center gap-1.5 opacity-80">
+            Free Shipping Over $150
+          </span>
+          <span class="flex items-center gap-1.5 opacity-80">
+            30-Day Returns
+          </span>
         </div>
-        <div>
-          <PhUserCircle :size="28" />
+        <div class="flex gap-6">
+          <a href="#" class="opacity-70">Track Order</a>
+          <a href="#" class="opacity-70">Store Locator</a>
+          <a href="#" class="opacity-70 font-bold text-amber-400">Join Rewards</a>
         </div>
       </div>
     </div>
-  </nav>
+
+    <!-- Main Navigation Placeholder -->
+    <nav class="h-20 px-4 lg:px-10 flex items-center justify-center">
+      <div class="max-w-[1440px] w-full flex items-center justify-between gap-8 text-white">
+        LOGO
+      </div>
+    </nav>
+  </header>
 </template>
 
 <script setup lang="ts">
