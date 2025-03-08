@@ -5,10 +5,10 @@
       <div class="max-w-[1440px] mx-auto flex justify-between items-center text-[10px] lg:text-xs font-medium tracking-wide uppercase">
         <div class="flex gap-6">
           <span class="flex items-center gap-1.5 opacity-80">
-            Free Shipping Over $150
+            <PhTruck :size="14" weight="bold" /> Free Shipping Over $150
           </span>
           <span class="flex items-center gap-1.5 opacity-80">
-            30-Day Returns
+            <PhArrowsCounterClockwise :size="14" weight="bold" /> 30-Day Returns
           </span>
         </div>
         <div class="flex gap-6">
@@ -28,7 +28,17 @@
           <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></div>
         </RouterLink>
 
-        <div class="flex-1"></div>
+        <!-- Search Bar -->
+        <div class="hidden md:flex flex-1 max-w-2xl items-center relative group">
+          <div class="absolute left-4 z-10 text-slate-400 group-focus-within:text-amber-400 transition-colors">
+            <PhMagnifyingGlass :size="18" weight="bold" />
+          </div>
+          <input 
+            type="search" 
+            class="w-full h-11 bg-slate-800/50 border border-slate-700 rounded-full pl-12 pr-4 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/50 focus:border-amber-400 transition-all text-sm"
+            placeholder="What are you looking for today?" 
+          />
+        </div>
 
         <div class="flex items-center gap-8 text-white">
           ICONS
@@ -43,6 +53,9 @@ import { useRouter } from "vue-router";
 import {
   PhShoppingCart,
   PhUserCircle,
+  PhTruck,
+  PhArrowsCounterClockwise,
+  PhMagnifyingGlass
 } from '@phosphor-icons/vue';
 const router = useRouter();
 </script>
