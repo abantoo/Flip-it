@@ -12,9 +12,9 @@
           </span>
         </div>
         <div class="flex gap-6">
-          <a href="#" class="opacity-70">Track Order</a>
-          <a href="#" class="opacity-70">Store Locator</a>
-          <a href="#" class="opacity-70 font-bold text-amber-400">Join Rewards</a>
+          <a href="#" class="opacity-70 text-xs">Track Order</a>
+          <a href="#" class="opacity-70 text-xs">Store Locator</a>
+          <a href="#" class="opacity-70 text-xs font-bold text-amber-400">Join Rewards</a>
         </div>
       </div>
     </div>
@@ -40,8 +40,36 @@
           />
         </div>
 
-        <div class="flex items-center gap-8 text-white">
-          ICONS
+        <!-- Navigation Links & Icons -->
+        <div class="flex items-center gap-6 lg:gap-8">
+          <div class="hidden lg:flex items-center gap-6 font-semibold text-sm tracking-wide uppercase text-slate-100">
+            <RouterLink
+              to="/"
+              class="relative py-2 transition-colors hover:text-amber-300"
+              :class="{ 'text-amber-300': router.currentRoute.value.name == 'home' }"
+            >
+              Home
+              <span v-if="router.currentRoute.value.name == 'home'" class="absolute -bottom-1 left-0 w-full h-0.5 bg-amber-400"></span>
+            </RouterLink>
+            <RouterLink
+              to="/offers"
+              class="relative py-2 transition-colors hover:text-amber-300"
+              :class="{ 'text-amber-300 font-bold': router.currentRoute.value.name == 'offers' }"
+            >
+              Offers
+            </RouterLink>
+            <RouterLink
+              to="/about"
+              class="relative py-2 transition-colors hover:text-amber-300"
+              :class="{ 'text-amber-300': router.currentRoute.value.name == 'about' }"
+            >
+              About
+            </RouterLink>
+          </div>
+
+          <div class="flex items-center gap-4 border-l border-slate-700 pl-6 h-8 text-white">
+            ICONS
+          </div>
         </div>
       </div>
     </nav>
