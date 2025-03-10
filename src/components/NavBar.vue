@@ -1,20 +1,20 @@
 <template>
-  <header class="w-full sticky top-0 z-50 bg-slate-900 border-b border-slate-800 shadow-xl">
+  <header class="w-full sticky top-0 z-50 bg-slate-900 border-b border-slate-800 shadow-xl transiton-all duration-300">
     <!-- Top Bar -->
     <div class="bg-slate-950 text-white py-1.5 px-4 lg:px-10 hidden md:block">
       <div class="max-w-[1440px] mx-auto flex justify-between items-center text-[10px] lg:text-xs font-medium tracking-wide uppercase">
         <div class="flex gap-6">
-          <span class="flex items-center gap-1.5 opacity-80">
+          <span class="flex items-center gap-1.5 opacity-80 hover:opacity-100 cursor-default transition-opacity">
             <PhTruck :size="14" weight="bold" /> Free Shipping Over $150
           </span>
-          <span class="flex items-center gap-1.5 opacity-80">
+          <span class="flex items-center gap-1.5 opacity-80 hover:opacity-100 cursor-default transition-opacity">
             <PhArrowsCounterClockwise :size="14" weight="bold" /> 30-Day Returns
           </span>
         </div>
         <div class="flex gap-6">
-          <a href="#" class="opacity-70 text-xs">Track Order</a>
-          <a href="#" class="opacity-70 text-xs">Store Locator</a>
-          <a href="#" class="opacity-70 text-xs font-bold text-amber-400">Join Rewards</a>
+          <a href="#" class="opacity-70 hover:opacity-100 transition-opacity">Track Order</a>
+          <a href="#" class="opacity-70 hover:opacity-100 transition-opacity">Store Locator</a>
+          <a href="#" class="opacity-70 hover:opacity-100 transition-opacity font-bold text-amber-400">Join Rewards</a>
         </div>
       </div>
     </div>
@@ -74,10 +74,12 @@
             </button>
             <button class="relative group p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-300 hover:text-white" aria-label="Account">
               <PhUserCircle :size="24" weight="duotone" />
+              <span class="absolute top-10 right-1/2 translate-x-1/2 px-2 py-1 bg-slate-800 text-xs text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-slate-700">Account</span>
             </button>
             <button class="relative group p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-300 hover:text-white" aria-label="Shopping Cart">
               <PhShoppingCart :size="24" weight="duotone" />
               <span class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-amber-500 text-[10px] font-bold text-slate-900 ring-2 ring-slate-900">0</span>
+              <span class="absolute top-10 right-1/2 translate-x-1/2 px-2 py-1 bg-slate-800 text-xs text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-slate-700">Cart</span>
             </button>
           </div>
         </div>
