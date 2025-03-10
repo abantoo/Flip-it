@@ -67,8 +67,18 @@
             </RouterLink>
           </div>
 
-          <div class="flex items-center gap-4 border-l border-slate-700 pl-6 h-8 text-white">
-            ICONS
+          <!-- Icons -->
+          <div class="flex items-center gap-4 border-l border-slate-700 pl-6 h-8">
+            <button class="relative group p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-300 hover:text-white" aria-label="Search mobile only md:hidden">
+              <PhMagnifyingGlass :size="24" class="md:hidden" />
+            </button>
+            <button class="relative group p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-300 hover:text-white" aria-label="Account">
+              <PhUserCircle :size="24" weight="duotone" />
+            </button>
+            <button class="relative group p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-300 hover:text-white" aria-label="Shopping Cart">
+              <PhShoppingCart :size="24" weight="duotone" />
+              <span class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-amber-500 text-[10px] font-bold text-slate-900 ring-2 ring-slate-900">0</span>
+            </button>
           </div>
         </div>
       </div>
