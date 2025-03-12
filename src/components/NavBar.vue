@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full sticky top-0 z-50 bg-slate-900 border-b border-slate-800 shadow-xl transiton-all duration-300">
+  <header class="w-full sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 shadow-xl transition-all duration-300">
     <!-- Top Bar -->
     <div class="bg-slate-950 text-white py-1.5 px-4 lg:px-10 hidden md:block">
       <div class="max-w-[1440px] mx-auto flex justify-between items-center text-[10px] lg:text-xs font-medium tracking-wide uppercase">
