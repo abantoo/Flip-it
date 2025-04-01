@@ -5,7 +5,7 @@
       <div class="max-w-[1440px] mx-auto flex justify-between items-center text-[10px] lg:text-xs font-medium tracking-wide uppercase">
         <div class="flex gap-6">
           <span class="flex items-center gap-1.5 opacity-80 hover:opacity-100 cursor-default transition-opacity">
-            <PhTruck :size="14" weight="bold" /> Free Shipping Over $150
+            <PhTruck :size="14" weight="bold" /> Free Shipping Over ৳1,500
           </span>
           <span class="flex items-center gap-1.5 opacity-80 hover:opacity-100 cursor-default transition-opacity">
             <PhArrowsCounterClockwise :size="14" weight="bold" /> 30-Day Returns
