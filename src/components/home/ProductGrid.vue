@@ -11,7 +11,17 @@
 <script setup lang="ts">
 import ProductCard from './ProductCard.vue';
 
-const products = [
+interface Product {
+  id: number;
+  title: string;
+  price: number | string;
+  condition: 'Used' | 'Intek';
+  description: string;
+  image: string;
+  verified?: boolean;
+}
+
+const products: Product[] = [
   {
     id: 1,
     title: 'Intel Core i9-13900K Processor',
