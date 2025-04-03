@@ -1,53 +1,63 @@
 <template>
-  <div class="px-8">
-    <h1 class="text-center text-5xl">Welcome to <span class="text-amber-300">Flip it BD</span></h1>
-    <h1 class="text-xl text-amber-300">Featured</h1>
-    <div class="w-full h-0.5 bg-amber-300 mt-2"></div>
-    <div class="flex items-center justify-center w-full pt-4 gap-2 md:gap-6">
-      <FeaturedCard class="w-1/5"
-        image="https://computerimporter.com/wp-content/uploads/2022/03/VENG_LPX_BLK_01-500x500-1.png" title="Rams" />
-      <FeaturedCard class="w-1/5"
-        image="https://www.startech.com.bd/image/cache/catalog/casing-cooler/deepcool/xfan-80/xfan-80-01-228x228.jpg"
-        title="Cooler" />
-      <FeaturedCard class="w-1/5"
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDoP85dOoSYHDziDfVxfhJEk-9HDN8wCKNg&usqp=CAU"
-        title="Mobo" />
-      <FeaturedCard class="w-1/5"
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Vv4hL1snfGCgnH2QAgkjvti9wpwmArvIm97updWAaWzjauLjmkXc9zWmLgEE_gN3W1w&usqp=CAU"
-        title="Processors" />
-    </div>
-    <h1 class="text-xl text-amber-300 mt-8">Our Products</h1>
-    <div class="w-full h-0.5 bg-amber-300 mt-2"></div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-4 gap-3">
-      <ItemsCard
-        image="https://scontent.fdac138-2.fna.fbcdn.net/v/t1.15752-9/348354742_166665499705694_4901285852113542858_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=NVXJiEjR6sgAX-9OXNl&_nc_ht=scontent.fdac138-2.fna&oh=03_AdQUQUxVWcb4davj7fvS9vjA77aWL_bfT_uOXr-1Nlup-g&oe=64A60047"
-        title="Full PC" price="35000 ৳" condition="Used"
-        description="Used for 4 years, verified by our team at Flip it BD" :verified="true" />
-      <ItemsCard image="https://www.reckoncomputers.co.in/assets/uploads/25f8e52f7a1057b4.webp"
-        title="Cooler Master MWE GOLD 650 FULLY MODULAR" price="5000 ৳" condition="Used"
-        description="Used for around 1 year." :verified="true" />
+  <div class="px-4 lg:px-10 py-10 max-w-[1440px] mx-auto">
+    <!-- Hero Section -->
+    <HeroSection />
 
-      <ItemsCard
-        image="https://www.getsview.com/wp-content/uploads/2019/07/Source-List-of-Used-pc-parts-buy-and-sell-in-Bangladesh.jpg"
-        title="Sapphire HD 7770" price="7000 ৳" condition="Used"
-        description="Used for 2 years, collected and fixed by our expert team at Flip it BD" :verified="true" />
+    <!-- Categories -->
+    <section class="mb-20">
+      <SectionHeader 
+        title="Browse by Category" 
+        subtitle="Find exactly what your build needs"
+        to="/categories"
+      />
+      <CategoryGrid />
+    </section>
 
+    <!-- Featured Products -->
+    <section class="mb-20">
+      <SectionHeader 
+        title="Featured Gear" 
+        subtitle="Hand-picked premium components"
+        to="/products"
+      />
+      <ProductGrid />
+    </section>
 
-
-      <ItemsCard
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkFraYrzBhZqQ8NJg0J8BQxpmaSeaIgu3PL1TF_XNuEbXpP9tnsb7dmPyCThwAbwmqIoI&usqp=CAU"
-        title="2x HyperX fury" price="5000 ৳" condition="Used" description="Used for 1 year, fixed recently"
-        :verified="true" />
-
-      <ItemsCard
-        image="https://media.karousell.com/media/photos/products/2022/12/7/used_pc_parts_lot_1670430167_c469d146_progressive"
-        title="Intel i3-10100f" price="4000 ৳" condition="Used" description="Used for 3 years, overheats frequently"
-        :verified="false" />
-    </div>
+    <!-- Value Propositions -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 py-16 border-t border-slate-800">
+      <div v-for="prop in props" :key="prop.title" class="flex flex-col items-center text-center p-6 rounded-3xl bg-slate-900/50 border border-slate-800">
+        <div class="w-12 h-12 rounded-2xl bg-amber-400/10 flex items-center justify-center text-amber-400 mb-4">
+          <component :is="prop.icon" :size="24" weight="bold" />
+        </div>
+        <h3 class="text-white font-bold mb-2">{{ prop.title }}</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">{{ prop.description }}</p>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup lang="ts">
-import ItemsCard from '../components/ItemsCard.vue';
-import FeaturedCard from '../components/FeaturedCard.vue';
+import HeroSection from '../components/home/HeroSection.vue';
+import CategoryGrid from '../components/home/CategoryGrid.vue';
+import ProductGrid from '../components/home/ProductGrid.vue';
+import SectionHeader from '../components/ui/SectionHeader.vue';
+import { PhShieldCheck, PhLightning, PhCurrencyCircleDollar } from '@phosphor-icons/vue';
+
+const props = [
+  { 
+    title: 'Verified Quality', 
+    description: 'Every 2nd-hand item is checked by our expert technicians.', 
+    icon: PhShieldCheck 
+  },
+  { 
+    title: 'Instant Delivery', 
+    description: 'Lightning fast shipping across all 64 districts of Bangladesh.', 
+    icon: PhLightning 
+  },
+  { 
+    title: 'Best Value', 
+    description: 'Get the highest performance for every Taka you spend.', 
+    icon: PhCurrencyCircleDollar 
+  },
+];
 </script>
