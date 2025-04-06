@@ -16,8 +16,8 @@
     <!-- Featured Products -->
     <section class="mb-20">
       <SectionHeader 
-        title="Featured Gear" 
-        subtitle="Hand-picked premium components"
+        title="Latest Arrivals" 
+        subtitle="Recently added premium components"
         to="/products"
       />
       <ProductGrid />
