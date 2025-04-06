@@ -1,5 +1,5 @@
 <template>
-  <div class="group relative bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden transition-all duration-500 hover:border-amber-400/50 hover:shadow-2xl hover:shadow-amber-400/10">
+  <div class="group relative bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden transition-all duration-500 hover:border-amber-400/50 hover:shadow-2xl hover:shadow-amber-400/20 hover:-translate-y-2">
     <!-- Image Container -->
     <div class="relative h-64 overflow-hidden bg-slate-800">
       <img 
