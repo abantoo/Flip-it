@@ -7,6 +7,9 @@
     <span v-if="oldPrice" class="ml-2 text-xs text-slate-500 line-through decoration-slate-600">
       ৳{{ oldPrice.toLocaleString() }}
     </span>
+    <span v-if="suffix" class="ml-1 text-[10px] font-bold text-slate-500 uppercase tracking-tighter">
+      {{ suffix }}
+    </span>
   </div>
 </template>
 
@@ -17,6 +20,7 @@ const props = defineProps<{
   value: number | string;
   oldPrice?: number | string;
   size?: 'sm' | 'md' | 'lg' | 'xl';
+  suffix?: string;
 }>();
 
 const size = props.size || 'md';
