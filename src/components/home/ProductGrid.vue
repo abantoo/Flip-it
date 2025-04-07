@@ -57,6 +57,33 @@ const products: Product[] = [
     description: 'Mint condition. All glass intact. Original fans included.',
     image: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&q=80&w=600',
     verified: true
+  },
+  {
+    id: 5,
+    title: 'Seagate IronWolf 8TB NAS HDD',
+    price: 18500,
+    condition: 'Intek',
+    description: '7200 RPM, 256MB Cache. Perfect for storage and plex servers.',
+    image: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&q=80&w=600',
+    verified: true
+  },
+  {
+    id: 6,
+    title: 'G.Skill Trident Z5 RGB 6400MHz',
+    price: 15000,
+    condition: 'Used',
+    description: 'Used for extreme overclocking testing. Stable at 6600MHz.',
+    image: 'https://images.unsplash.com/photo-1562976540-1502bc7645ad?auto=format&fit=crop&q=80&w=600',
+    verified: false
+  },
+  {
+    id: 7,
+    title: 'NZXT Kraken Z73 RGB 360mm',
+    price: 22000,
+    condition: 'Used',
+    description: 'Includes animated LCD screen. 1 year used, no leaks.',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600',
+    verified: true
   }
 ];
 </script>
