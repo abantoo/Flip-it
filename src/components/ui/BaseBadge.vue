@@ -15,7 +15,7 @@ const props = defineProps<{
 const variant = props.variant || 'outline';
 
 const variants = {
-  primary: 'bg-amber-400 text-slate-900 border-amber-400 shadow-sm shadow-amber-400/20',
+  primary: 'bg-amber-400 text-slate-900 border-amber-400 shadow-sm shadow-amber-400/20 animate-pulse',
   secondary: 'bg-slate-700 text-white border-slate-600',
   success: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
   warning: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
