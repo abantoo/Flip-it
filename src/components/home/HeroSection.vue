@@ -20,7 +20,7 @@
         Premium 2nd-hand and brand new components verified by experts. The smartest way to build your dream PC in Bangladesh.
       </p>
 
-      <div class="flex flex-col sm:flex-row items-center gap-4 w-full max-w-md">
+      <div class="flex flex-col sm:flex-row items-center gap-4 w-full max-w-md animate-float">
         <button class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-900 font-black text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-amber-400/20 flex items-center justify-center gap-2 group">
           Browse items 
           <PhArrowRight :size="20" weight="bold" class="transition-transform duration-300 group-hover:translate-x-1" />
@@ -59,5 +59,12 @@ const stats = [
 }
 .animate-fade-in {
   animation: fade-in 0.6s ease-out forwards;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
 </style>
