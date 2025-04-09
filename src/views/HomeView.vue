@@ -23,6 +23,11 @@
       <ProductGrid />
     </section>
 
+    <!-- Newsletter Section -->
+    <section class="mb-20">
+      <NewsletterCard />
+    </section>
+
     <!-- Value Propositions -->
     <section class="grid grid-cols-1 md:grid-cols-3 gap-8 py-16 border-t border-slate-800">
       <div v-for="prop in props" :key="prop.title" class="flex flex-col items-center text-center p-6 rounded-3xl bg-slate-900/50 border border-slate-800">
@@ -40,6 +45,7 @@
 import HeroSection from '../components/home/HeroSection.vue';
 import CategoryGrid from '../components/home/CategoryGrid.vue';
 import ProductGrid from '../components/home/ProductGrid.vue';
+import NewsletterCard from '../components/home/NewsletterCard.vue';
 import SectionHeader from '../components/ui/SectionHeader.vue';
 import { PhShieldCheck, PhLightning, PhCurrencyCircleDollar } from '@phosphor-icons/vue';
 
