@@ -15,6 +15,8 @@ interface Product {
   id: number;
   title: string;
   price: number | string;
+  oldPrice?: number | string;
+  discountPercent?: number | string;
   condition: 'Used' | 'Intek';
   description: string;
   image: string;
@@ -83,6 +85,17 @@ const products: Product[] = [
     condition: 'Used',
     description: 'Includes animated LCD screen. 1 year used, no leaks.',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600',
+    verified: true
+  },
+  {
+    id: 8,
+    title: 'Logitech G Pro X Superlight 2',
+    price: 15500,
+    oldPrice: 18500,
+    discountPercent: 16,
+    condition: 'Intek',
+    description: 'The world\'s fastest gaming mouse. Brand new, factory sealed.',
+    image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&q=80&w=600',
     verified: true
   }
 ];

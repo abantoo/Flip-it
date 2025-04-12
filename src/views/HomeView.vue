@@ -8,6 +8,7 @@
       <SectionHeader 
         title="Browse by Category" 
         subtitle="Find exactly what your build needs"
+        description="From the latest CPUs to high-performance GPUs, explore our verified collection of premium components."
         to="/categories"
       />
       <CategoryGrid />
@@ -18,6 +19,7 @@
       <SectionHeader 
         title="Latest Arrivals" 
         subtitle="Recently added premium components"
+        description="Don't miss out on these newly listed gems. Every item is verified for quality and performance."
         to="/products"
       />
       <ProductGrid />
