@@ -10,6 +10,9 @@
     <span v-if="suffix" class="ml-1 text-[10px] font-bold text-slate-500 uppercase tracking-tighter">
       {{ suffix }}
     </span>
+    <span v-if="discountPercent" class="ml-3 px-1.5 py-0.5 rounded-md bg-rose-500/10 text-rose-500 text-[10px] font-black uppercase tracking-wider border border-rose-500/20">
+      -{{ discountPercent }}%
+    </span>
   </div>
 </template>
 
@@ -21,6 +24,7 @@ const props = defineProps<{
   oldPrice?: number | string;
   size?: 'sm' | 'md' | 'lg' | 'xl';
   suffix?: string;
+  discountPercent?: number | string;
 }>();
 
 const size = props.size || 'md';
