@@ -3,6 +3,7 @@
     <!-- Abstract Background Pattern -->
     <div class="absolute inset-0 opacity-20">
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(251,191,36,0.15),transparent)]"></div>
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
       <div class="absolute -top-24 -left-24 w-96 h-96 bg-amber-400/10 blur-[100px] rounded-full"></div>
       <div class="absolute top-1/2 -right-24 w-80 h-80 bg-blue-500/10 blur-[100px] rounded-full"></div>
     </div>
