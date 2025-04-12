@@ -39,7 +39,7 @@
       </p>
 
       <div class="flex items-center justify-between border-t border-slate-800 pt-5">
-        <PriceTag :value="price" size="lg" />
+        <PriceTag :value="price" :old-price="oldPrice" :discount-percent="discountPercent" size="lg" />
         <button class="p-2.5 rounded-xl bg-slate-800 text-slate-400 hover:bg-amber-400 hover:text-slate-900 transition-all duration-300">
           <PhShoppingCart :size="20" weight="bold" />
         </button>
@@ -57,6 +57,8 @@ defineProps<{
   image: string;
   title: string;
   price: number | string;
+  oldPrice?: number | string;
+  discountPercent?: number | string;
   condition: 'Used' | 'Intek';
   description: string;
   verified?: boolean;
