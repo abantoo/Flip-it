@@ -5,8 +5,11 @@
         <span class="w-1.5 h-6 bg-amber-400 rounded-full transition-all duration-300 group-hover:h-8 group-hover:shadow-[0_0_15px_rgba(251,191,36,0.5)]"></span>
         {{ title }}
       </h2>
-      <p v-if="subtitle" class="mt-1 text-slate-400 text-sm font-medium ml-3.5 italic">
+      <p v-if="subtitle" class="mt-1 text-slate-400 text-sm font-medium ml-3.5 italic opacity-80 group-hover:opacity-100 transition-opacity duration-300">
         {{ subtitle }}
+      </p>
+      <p v-if="description" class="mt-2 text-slate-500 text-xs max-w-md ml-3.5 leading-relaxed">
+        {{ description }}
       </p>
     </div>
     
@@ -27,6 +30,7 @@ import { PhCaretRight } from '@phosphor-icons/vue';
 defineProps<{
   title: string;
   subtitle?: string;
+  description?: string;
   to?: string;
 }>();
 </script>
