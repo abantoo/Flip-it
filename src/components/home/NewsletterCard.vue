@@ -8,18 +8,28 @@
         </p>
       </div>
 
-      <div class="flex-1 w-full max-w-md">
-        <form @submit.prevent class="flex flex-col sm:flex-row gap-3">
+      <div class="flex-1 w-full max-w-md transition-all duration-500">
+        <form v-if="!subscribed" @submit.prevent="subscribed = true" class="flex flex-col sm:flex-row gap-3">
           <input 
             type="email" 
             placeholder="your@email.com" 
-            class="flex-1 px-6 py-4 rounded-2xl bg-slate-800 border border-slate-700 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/50 transition-all"
+            required
+            class="flex-1 px-6 py-4 rounded-2xl bg-slate-800 border border-slate-700 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/50 transition-all font-medium"
           />
-          <button class="px-8 py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-900 font-extrabold transition-all duration-300 transform hover:scale-105 active:scale-95">
+          <button type="submit" class="px-8 py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-900 font-extrabold transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-amber-400/20">
             Subscribe
           </button>
         </form>
-        <p class="mt-4 text-[10px] text-slate-500 text-center sm:text-left uppercase tracking-widest font-bold">
+        
+        <div v-else class="flex flex-col items-center sm:items-start animate-fade-in">
+          <div class="flex items-center gap-3 text-amber-400 mb-2">
+            <PhCheckCircle :size="32" weight="fill" />
+            <span class="text-xl font-black text-white">You're on the list!</span>
+          </div>
+          <p class="text-slate-400 text-sm font-medium ml-1">Check your inbox for a confirmation. Welcome to the club.</p>
+        </div>
+
+        <p v-if="!subscribed" class="mt-4 text-[10px] text-slate-500 text-center sm:text-left uppercase tracking-widest font-bold">
           No spam, just tech. Unsubscribe any time.
         </p>
       </div>
@@ -31,5 +41,18 @@
 </template>
 
 <script setup lang="ts">
-// No logic needed for now
+import { ref } from 'vue';
+import { PhCheckCircle } from '@phosphor-icons/vue';
+
+const subscribed = ref(false);
 </script>
+
+<style scoped>
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+</style>
