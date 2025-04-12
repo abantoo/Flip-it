@@ -4,13 +4,13 @@
     class="group relative h-40 overflow-hidden rounded-2xl bg-slate-800 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-400/10"
   >
     <!-- Background Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-br from-slate-900/40 to-slate-900/80 z-10 transition-opacity duration-500 group-hover:opacity-60"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900/40 to-slate-900/80 z-10 transition-all duration-500 group-hover:opacity-60 group-hover:backdrop-blur-[2px]"></div>
     
     <!-- Image -->
     <img 
       :src="image" 
       :alt="title" 
-      class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+      class="h-full w-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110"
     />
 
     <!-- Content -->
