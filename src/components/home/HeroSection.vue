@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full h-[500px] mb-16 overflow-hidden rounded-[2.5rem] bg-slate-900 border border-slate-800 shadow-2xl">
+  <section class="relative w-full min-h-[600px] lg:h-[650px] mb-16 overflow-hidden rounded-[2.5rem] bg-slate-900 border border-slate-800 shadow-2xl">
     <!-- Abstract Background Pattern -->
     <div class="absolute inset-0 opacity-20">
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(251,191,36,0.15),transparent)]"></div>
@@ -8,7 +8,7 @@
       <div class="absolute top-1/2 -right-24 w-80 h-80 bg-blue-500/10 blur-[100px] rounded-full"></div>
     </div>
 
-    <div class="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
+    <div class="relative z-10 w-full flex flex-col items-center pt-16 pb-32 lg:pt-24 lg:pb-0 lg:h-full lg:justify-center px-6 text-center">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/20 text-amber-400 text-xs font-bold uppercase tracking-widest mb-6 animate-fade-in">
         <PhSparkle :size="14" weight="fill" /> Bangladesh's Elite Tech Marketplace
       </div>
@@ -32,7 +32,7 @@
       </div>
 
       <!-- Quick Stats -->
-      <div class="absolute bottom-10 left-10 right-10 hidden lg:flex justify-between items-center px-10">
+      <div class="absolute bottom-8 lg:bottom-12 left-10 right-10 hidden lg:flex justify-between items-center px-10">
         <div v-for="stat in stats" :key="stat.label" class="flex flex-col items-start">
           <span class="text-2xl font-black text-white">{{ stat.value }}</span>
           <span class="text-xs font-bold uppercase tracking-widest text-slate-500">{{ stat.label }}</span>
@@ -44,6 +44,7 @@
 
 <script setup lang="ts">
 import { PhArrowRight, PhSparkle } from '@phosphor-icons/vue';
+import HeroStat from './HeroStat.vue';
 
 const stats = [
   { label: 'Verified Tech', value: '1,200+' },
