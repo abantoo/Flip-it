@@ -33,10 +33,12 @@
 
       <!-- Quick Stats -->
       <div class="absolute bottom-8 lg:bottom-12 left-10 right-10 hidden lg:flex justify-between items-center px-10">
-        <div v-for="stat in stats" :key="stat.label" class="flex flex-col items-start">
-          <span class="text-2xl font-black text-white">{{ stat.value }}</span>
-          <span class="text-xs font-bold uppercase tracking-widest text-slate-500">{{ stat.label }}</span>
-        </div>
+        <HeroStat 
+          v-for="stat in stats" 
+          :key="stat.label"
+          :label="stat.label"
+          :value="stat.value"
+        />
       </div>
     </div>
   </section>
