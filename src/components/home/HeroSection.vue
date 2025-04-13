@@ -51,8 +51,8 @@ import HeroStat from './HeroStat.vue';
 const stats = [
   { label: 'Verified Tech', value: '1,200+' },
   { label: 'Happy Builders', value: '4.9/5' },
-  { label: 'Expert Checks', value: '100%' },
   { label: 'Safe Escrow', value: 'Instant' },
+  { label: 'Expert Checks', value: '100% Guaranteed' },
 ];
 </script>
 
