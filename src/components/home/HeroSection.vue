@@ -32,7 +32,7 @@
       </div>
 
       <!-- Quick Stats -->
-      <div class="absolute bottom-8 lg:bottom-12 left-10 right-10 hidden lg:flex justify-between items-center px-10">
+      <div class="absolute bottom-6 lg:bottom-14 left-10 right-10 hidden lg:flex justify-between items-center px-10">
         <HeroStat 
           v-for="stat in stats" 
           :key="stat.label"
