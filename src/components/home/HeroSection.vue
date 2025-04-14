@@ -8,7 +8,7 @@
       <div class="absolute top-1/2 -right-24 w-80 h-80 bg-blue-500/10 blur-[100px] rounded-full"></div>
     </div>
 
-    <div class="relative z-10 w-full flex flex-col items-center pt-16 pb-32 lg:pt-24 lg:pb-0 lg:h-full lg:justify-center px-6 text-center">
+    <div class="relative z-10 w-full flex flex-col items-center pt-16 pb-40 lg:pt-20 lg:pb-0 lg:h-full lg:justify-center px-6 text-center">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/20 text-amber-400 text-xs font-bold uppercase tracking-widest mb-6 animate-fade-in">
         <PhSparkle :size="14" weight="fill" /> Bangladesh's Elite Tech Marketplace
       </div>
