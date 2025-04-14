@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full min-h-[600px] lg:h-[650px] mb-16 overflow-hidden rounded-[2.5rem] bg-slate-900 border border-slate-800 shadow-2xl">
+  <section class="relative w-full min-h-[650px] lg:h-[720px] mb-16 overflow-hidden rounded-[2.5rem] bg-slate-900 border border-slate-800 shadow-2xl">
     <!-- Abstract Background Pattern -->
     <div class="absolute inset-0 opacity-20">
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(251,191,36,0.15),transparent)]"></div>
