@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-start group">
-    <span class="text-2xl font-black text-white transition-transform duration-300 group-hover:scale-110 group-hover:text-amber-400">
+    <span class="text-2xl font-black text-white transition-all duration-300 group-hover:scale-110 group-hover:text-amber-400 group-hover:translate-x-0.5">
       {{ value }}
     </span>
     <span class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-400 transition-colors">
