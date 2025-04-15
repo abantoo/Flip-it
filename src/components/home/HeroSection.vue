@@ -17,7 +17,7 @@
         Level Up Your Rig with <span class="bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">Flip-it</span>
       </h1>
       
-      <p class="text-lg md:text-xl text-slate-400 font-medium mb-10 max-w-2xl leading-relaxed">
+      <p class="text-lg md:text-xl text-slate-400 font-medium mb-8 max-w-2xl leading-relaxed">
         Premium 2nd-hand and brand new components verified by experts. The smartest way to build your dream PC in Bangladesh.
       </p>
 
