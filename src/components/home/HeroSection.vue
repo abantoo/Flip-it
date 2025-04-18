@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-import { PhArrowRight, PhSparkle } from '@phosphor-icons/vue';
+import { PhArrowRight } from '@phosphor-icons/vue';
 import HeroStat from './HeroStat.vue';
 
 const stats = [
