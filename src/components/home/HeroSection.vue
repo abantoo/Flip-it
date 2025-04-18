@@ -8,7 +8,7 @@
       <div class="absolute top-1/2 -right-24 w-80 h-80 bg-blue-500/10 blur-[100px] rounded-full"></div>
     </div>
 
-    <div class="relative z-10 w-full flex flex-col items-center pt-16 pb-40 lg:pt-20 lg:pb-0 lg:h-full lg:justify-center px-6 text-center">
+    <div class="relative z-10 w-full flex flex-col items-center pt-10 pb-40 lg:pt-14 lg:pb-0 lg:h-full lg:justify-center px-6 text-center">
       <h1 class="text-5xl md:text-7xl font-black text-white tracking-tight mb-6 max-w-4xl">
         Level Up Your Rig with <span class="bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">Flip-it</span>
       </h1>
