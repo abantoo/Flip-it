@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 lg:px-10 py-10 max-w-[1440px] mx-auto">
+  <div class="px-4 lg:px-10 pb-10 pt-4 max-w-[1440px] mx-auto">
     <!-- Hero Section -->
     <HeroSection />
 
