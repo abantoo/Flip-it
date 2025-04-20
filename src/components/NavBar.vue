@@ -68,7 +68,7 @@
           </div>
 
           <!-- Icons -->
-          <div class="flex items-center gap-4 border-l border-slate-700 pl-6 h-8">
+          <div class="flex items-center gap-4 border-l border-slate-700 pl-6 h-6">
             <button class="relative group p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-300 hover:text-white" aria-label="Search mobile only md:hidden">
               <PhMagnifyingGlass :size="24" class="md:hidden" />
             </button>
