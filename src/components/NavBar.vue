@@ -24,7 +24,7 @@
       <div class="max-w-[1440px] w-full flex items-center justify-between gap-8">
         <!-- Logo -->
         <RouterLink to="/" class="shrink-0 group relative">
-          <img class="h-10 lg:h-12 transition-transform duration-300 group-hover:scale-105" src="/flip_it_text.png" alt="flip-it-bd" />
+          <img class="h-8 lg:h-10 transition-transform duration-300 group-hover:scale-105" src="/flip_it_text.png" alt="flip-it-bd" />
           <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></div>
         </RouterLink>
 
