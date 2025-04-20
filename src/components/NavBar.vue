@@ -20,7 +20,7 @@
     </div>
 
     <!-- Main Navigation -->
-    <nav class="h-20 px-4 lg:px-10 flex items-center justify-center">
+    <nav class="h-16 px-4 lg:px-10 flex items-center justify-center">
       <div class="max-w-[1440px] w-full flex items-center justify-between gap-8">
         <!-- Logo -->
         <RouterLink to="/" class="shrink-0 group relative">
