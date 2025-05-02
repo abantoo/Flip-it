@@ -17,7 +17,7 @@
 
         <!-- Navigation Links & Icons -->
         <div class="flex items-center gap-6 lg:gap-8">
-          <NavLinks />
+          <NavLinks @open-contact="$emit('open-contact')" />
 
           <!-- Icons -->
           <div class="flex items-center gap-4 border-l border-slate-700 pl-6 h-6">
@@ -41,6 +41,7 @@
 </template>
 
 <script setup lang="ts">
+defineEmits(['open-contact']);
 import {
   PhShoppingCart,
   PhUserCircle,

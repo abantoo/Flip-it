@@ -14,11 +14,22 @@
         :class="isActive(link.name) ? 'w-full' : 'w-0 group-hover:w-full'"
       ></span>
     </RouterLink>
+
+    <!-- Contact Link -->
+    <button
+      class="relative py-2 transition-all duration-300 hover:text-amber-300 group"
+      @click="$emit('open-contact')"
+    >
+      Contact
+      <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+    </button>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useRouter } from "vue-router";
+
+defineEmits(['open-contact']);
 
 const router = useRouter();
 
