@@ -1,7 +1,7 @@
 <template>
-  <div class="flex bg-slate-950 flex-col items-center min-h-screen font-montserrat" data-theme="dark">
+  <div class="flex bg-slate-50 flex-col items-center min-h-screen font-montserrat" data-theme="light">
     <NavBar @open-contact="showContactModal = true" />
-    <div class="container py-8">
+    <div class="container py-8 flex-grow">
       <RouterView/>
     </div>
     <MainFooter @open-contact="showContactModal = true" />
