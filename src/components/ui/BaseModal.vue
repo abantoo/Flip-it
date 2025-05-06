@@ -11,7 +11,7 @@
       <div v-if="show" class="fixed inset-0 z-[100] flex items-center justify-center p-4">
         <!-- Backdrop -->
         <div 
-          class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm"
+          class="absolute inset-0 bg-slate-900/40 backdrop-blur-md"
           @click="$emit('close')"
         ></div>
 
@@ -26,12 +26,12 @@
         >
           <div 
             v-if="show"
-            class="relative w-full max-w-4xl bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl overflow-hidden"
+            class="relative w-full max-w-4xl max-h-[85vh] bg-white border border-slate-200 rounded-3xl shadow-2xl overflow-y-auto"
           >
             <!-- Close Button -->
             <button 
               @click="$emit('close')"
-              class="absolute top-6 right-6 p-2 text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-800 rounded-full transition-all duration-300 z-10"
+              class="absolute top-6 right-6 p-2 text-slate-400 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 rounded-full transition-all duration-300 z-10"
             >
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
