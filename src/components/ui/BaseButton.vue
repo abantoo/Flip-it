@@ -2,12 +2,12 @@
   <button
     :type="type"
     :disabled="disabled"
-    class="relative inline-flex items-center justify-center px-8 py-3 font-bold text-white transition-all duration-300 rounded-xl group overflow-hidden"
+    class="relative inline-flex items-center justify-center px-8 py-3 font-bold transition-all duration-300 rounded-xl group overflow-hidden"
     :class="[
       variant === 'primary' 
-        ? 'bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500' 
-        : 'bg-slate-800 hover:bg-slate-700 border border-slate-700',
-      disabled ? 'opacity-50 cursor-not-allowed' : 'active:scale-95 shadow-lg hover:shadow-amber-500/25'
+        ? 'bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-amber-200' 
+        : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200 shadow-sm',
+      disabled ? 'opacity-50 cursor-not-allowed' : 'active:scale-95 shadow-lg hover:shadow-amber-500/20'
     ]"
     @click="$emit('click', $event)"
   >

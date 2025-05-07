@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-2">
-    <label v-if="label" :for="id" class="block text-sm font-medium text-slate-400 ml-1">
+    <label v-if="label" :for="id" class="block text-sm font-medium text-slate-600 ml-1">
       {{ label }}
     </label>
     <div class="relative group">
@@ -10,7 +10,7 @@
         :value="modelValue"
         :placeholder="placeholder"
         :required="required"
-        class="w-full bg-slate-800/50 border border-slate-700 text-white px-4 py-3 rounded-xl outline-none transition-all duration-300 focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/10 placeholder:text-slate-500"
+        class="w-full bg-white border border-slate-200 text-slate-900 px-4 py-3 rounded-xl outline-none transition-all duration-300 focus:border-amber-500/50 focus:ring-4 focus:ring-amber-500/10 placeholder:text-slate-400"
         @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       />
       <!-- Active Border Glow -->
