@@ -1,41 +1,35 @@
 <template>
-  <section class="relative w-full min-h-[650px] lg:h-[720px] mb-16 overflow-hidden rounded-[2.5rem] bg-slate-900 border border-slate-800 shadow-2xl">
-    <!-- Abstract Background Pattern -->
-    <div class="absolute inset-0 opacity-25">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(251,191,36,0.15),transparent)]"></div>
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
-      <div class="absolute -top-24 -left-24 w-96 h-96 bg-amber-400/10 blur-[100px] rounded-full"></div>
-      <div class="absolute top-1/2 -right-24 w-80 h-80 bg-blue-500/10 blur-[100px] rounded-full"></div>
-    </div>
-
-    <div class="relative z-10 w-full flex flex-col items-center pt-10 pb-40 lg:pt-14 lg:pb-0 lg:h-full lg:justify-center px-6 text-center">
-      <h1 class="text-5xl md:text-7xl font-black text-white tracking-tight mb-4 max-w-4xl">
-        Level Up Your Rig with <span class="bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">Flip-it</span>
+  <section 
+    class="w-full mb-16 overflow-hidden rounded-[2.5rem] bg-slate-50 border border-slate-200 shadow-sm flex flex-col min-h-[600px] lg:h-[700px] hero-patterns"
+  >
+    <div class="flex-grow flex flex-col items-center justify-center px-6 text-center pt-16">
+      <h1 class="text-5xl md:text-7xl font-black text-slate-900 tracking-tight mb-4 max-w-4xl">
+        Level Up Your Rig with <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">Flip-it</span>
       </h1>
       
-      <p class="text-lg md:text-xl text-slate-400 font-medium mb-8 max-w-2xl leading-relaxed">
+      <p class="text-lg md:text-xl text-slate-600 font-medium mb-8 max-w-2xl leading-relaxed">
         Premium 2nd-hand and brand new components verified by experts. The smartest way to build your dream PC in Bangladesh.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center gap-4 w-full max-w-md animate-float">
-        <button class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-900 font-black text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-amber-400/20 flex items-center justify-center gap-2 group">
+        <button class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-black text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-amber-500/20 flex items-center justify-center gap-2 group">
           Browse items 
           <PhArrowRight :size="20" weight="bold" class="transition-transform duration-300 group-hover:translate-x-1" />
         </button>
-        <button class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-lg transition-all duration-300 border border-slate-700">
+        <button class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-700 font-bold text-lg transition-all duration-300 border border-slate-200 shadow-sm">
           Sell Your Gear
         </button>
       </div>
+    </div>
 
-      <!-- Quick Stats -->
-      <div class="absolute bottom-6 lg:bottom-14 left-10 right-10 hidden lg:flex justify-between items-center px-10">
-        <HeroStat 
-          v-for="stat in stats" 
-          :key="stat.label"
-          :label="stat.label"
-          :value="stat.value"
-        />
-      </div>
+    <!-- Quick Stats -->
+    <div class="mt-auto hidden lg:flex justify-between items-center px-20 pb-14">
+      <HeroStat 
+        v-for="stat in stats" 
+        :key="stat.label"
+        :label="stat.label"
+        :value="stat.value"
+      />
     </div>
   </section>
 </template>
@@ -53,6 +47,16 @@ const stats = [
 </script>
 
 <style scoped>
+.hero-patterns {
+  background-image: 
+    radial-gradient(circle at 50% 120%, rgba(251, 191, 36, 0.1), transparent),
+    linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+    linear-gradient(to bottom, #e2e8f0 1px, transparent 1px),
+    radial-gradient(circle at 0% 0%, rgba(251, 191, 36, 0.05), transparent 400px),
+    radial-gradient(circle at 100% 50%, rgba(59, 130, 246, 0.05), transparent 400px);
+  background-size: 100% 100%, 4rem 4rem, 4rem 4rem, 100% 100%, 100% 100%;
+}
+
 @keyframes fade-in {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
