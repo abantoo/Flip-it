@@ -38,7 +38,7 @@
     <div class="flex items-center justify-end pt-4">
       <BaseButton type="submit" :disabled="isSubmitting">
         <PhPaperPlaneTilt v-if="!isSubmitting" :size="20" weight="bold" />
-        <span v-else class="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+        <span v-else class="w-5 h-5 border-2 border-slate-200 border-t-white rounded-full animate-spin"></span>
         {{ isSubmitting ? 'Sending...' : 'Send Message' }}
       </BaseButton>
     </div>
