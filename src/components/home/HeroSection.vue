@@ -4,7 +4,7 @@
   >
     <div class="flex-grow flex flex-col items-center justify-center px-6 text-center pt-16">
       <h1 class="text-5xl md:text-7xl font-black text-slate-900 tracking-tight mb-4 max-w-4xl">
-        Level Up Your Rig with <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">Flip-it</span>
+        Level Up Your Rig with <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">{{ `${appConfig.appName}` }}</span>
       </h1>
       
       <p class="text-lg md:text-xl text-slate-600 font-medium mb-8 max-w-2xl leading-relaxed">
@@ -35,6 +35,7 @@
 </template>
 
 <script setup lang="ts">
+import { appConfig } from '../../config';
 import { PhArrowRight } from '@phosphor-icons/vue';
 import HeroStat from './HeroStat.vue';
 

@@ -18,7 +18,7 @@
       </h1>
       
       <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-12">
-        Flip-it is more than just a marketplace. We are a community dedicated to sustainable tech, 
+        {{ `${appConfig.appName}` }} is more than just a marketplace. We are a community dedicated to sustainable tech, 
         ensuring everyone has access to verified, high-quality components.
       </p>
 
@@ -31,6 +31,7 @@
 </template>
 
 <script setup lang="ts">
+import { appConfig } from '../../config';
 import { PhRocketLaunch } from '@phosphor-icons/vue';
 import BaseButton from '../ui/BaseButton.vue';
 
