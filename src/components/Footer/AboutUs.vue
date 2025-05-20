@@ -3,7 +3,7 @@
     <div class="lg:col-span-1">
       <h4 class="text-white font-bold mb-6 flex items-center gap-2">
         <PhInfo :size="20" class="text-amber-400" />
-        About Flip-IT
+        About {{ `${appConfig.appName}` }}
       </h4>
       <p class="text-slate-500 text-sm leading-relaxed">
         We are Bangladesh's first dedicated marketplace for verified second-hand tech. Our mission is to make high-end computing accessible to everyone while ensuring quality through expert verification.
@@ -51,6 +51,7 @@
 </template>
 
 <script lang="ts" setup>
+import { appConfig } from '../../config';
 import { PhInfo } from '@phosphor-icons/vue';
 
 const companyLinks = [
