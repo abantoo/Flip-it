@@ -3,6 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        "flip-it-orange": "#FBB724",
+      },
+    },
+    extend: {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
