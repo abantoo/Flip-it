@@ -5,7 +5,7 @@
         <!-- Brand Section -->
         <div class="flex flex-col gap-6">
           <RouterLink to="/" class="w-fit">
-            <img class="h-10 transition-transform duration-300 hover:scale-105" src="/flip_it.png" :alt="`${appConfig.appName}`" />
+            <img class="h-10 transition-transform duration-300 hover:scale-105" src="../assets/logo.png" :alt="`${appConfig.appName}`" />
           </RouterLink>
           <p class="text-slate-600 text-sm leading-relaxed max-w-xs">
             Bangladesh's premier marketplace for verified tech components. Build your dream setup with confidence.
@@ -27,7 +27,7 @@
       <!-- Copyright -->
       <div class="border-t border-slate-200 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="text-slate-700 text-sm">
-          ©{{ new Date().getFullYear() }} {{ `${appConfig.appName}` }} bd Ltd | All rights reserved.
+          ©{{ new Date().getFullYear() }} {{ `${appConfig.appName}` }} Ltd | All rights reserved.
         </p>
         <div class="flex gap-8 text-slate-600 text-sm">
           <a href="#" class="hover:text-amber-600 transition-colors">Privacy Policy</a>
