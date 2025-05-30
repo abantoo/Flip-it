@@ -1,5 +1,8 @@
 {
   "appName": "Flip-it",
   "theme": "light",
-  "currency": "TK"
+  "currency": "TK",
+  "headOffice": "67/A Panthapath, Dhaka 1215",
+  "corporateOffice": "Quantum Level, Mirpur DOHS, Dhaka",
+  "supportEmail": "support@flipitbd.com"
 }
