@@ -53,6 +53,7 @@
 </template>
 
 <script lang="ts" setup>
+import { appConfig } from '../../config';
 import {
   PhInstagramLogo,
   PhFacebookLogo,
@@ -64,12 +65,12 @@ import {
 const offices = [
   {
     name: 'Head Office',
-    location: '67/A Panthapath, Dhaka 1215',
+    location: appConfig.headOffice,
     logo: PhMapPin,
   },
   {
     name: 'Corporate Office',
-    location: 'Quantum Level, Mirpur DOHS, Dhaka',
+    location: appConfig.corporateOffice,
     logo: PhMapPin,
   },
 ];
@@ -89,5 +90,5 @@ const socials = [
   }
 ];
 
-const email = "support@flipitbd.com";
+const email = appConfig.supportEmail;
 </script>
