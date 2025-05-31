@@ -52,12 +52,12 @@ const stats = [
 
 <style scoped>
 .hero-patterns {
-  background-image: 
-    radial-gradient(circle at 50% 120%, rgba(251, 191, 36, 0.1), transparent),
+  background-image:
+    radial-gradient(circle at 50% 120%, rgba(var(--tw-color-flip-it-orange-rgb), 0.1), transparent),
     linear-gradient(to right, #e2e8f0 1px, transparent 1px),
     linear-gradient(to bottom, #e2e8f0 1px, transparent 1px),
-    radial-gradient(circle at 0% 0%, rgba(251, 191, 36, 0.05), transparent 400px),
-    radial-gradient(circle at 100% 50%, rgba(59, 130, 246, 0.05), transparent 400px);
+    radial-gradient(circle at 0% 0%, rgba(var(--tw-color-flip-it-orange-rgb), 0.05), transparent 400px),
+    radial-gradient(circle at 100% 50%, rgba(var(--tw-color-flip-it-orange-rgb), 0.05), transparent 400px);
   background-size: 100% 100%, 4rem 4rem, 4rem 4rem, 100% 100%, 100% 100%;
 }
 
