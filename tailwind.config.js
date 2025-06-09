@@ -4,7 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        "flip-it-orange": "#FBB724",
+        "flip-it-orange": "var(--color-primary)",
+        "primary": "var(--color-primary)",
+        "secondary": "var(--color-secondary)",
+        "tertiary": "var(--color-tertiary)",
+        "accent": "var(--color-accent)",
+        "success": "var(--color-success)",
+        "warning": "var(--color-warning)",
+        "info": "var(--color-info)",
       },
     },
     extend: {
