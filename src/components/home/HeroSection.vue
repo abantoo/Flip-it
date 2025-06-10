@@ -5,7 +5,7 @@
     <div class="flex-grow flex flex-col items-center justify-center px-6 text-center pt-16">
       <h1 class="text-5xl md:text-7xl font-black text-slate-900 tracking-tight mb-4 max-w-4xl">
         Level Up Your Rig with 
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600 mt-4">
+        <span class="text-transparent bg-clip-text bg-[var(--gradient-primary)] mt-4">
           <img class="mt-4" src="../../assets/logo.png" alt="">
         </span>
       </h1>
@@ -15,7 +15,7 @@
       </p>
 
       <div class="flex flex-col sm:flex-row items-center gap-4 w-full max-w-md animate-float">
-        <button class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-black text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-amber-500/20 flex items-center justify-center gap-2 group">
+        <button class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-primary hover:bg-accent text-white font-black text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-primary/20 flex items-center justify-center gap-2 group">
           Browse items 
           <PhArrowRight :size="20" weight="bold" class="transition-transform duration-300 group-hover:translate-x-1" />
         </button>
@@ -38,7 +38,6 @@
 </template>
 
 <script setup lang="ts">
-import { appConfig } from '../../config';
 import { PhArrowRight } from '@phosphor-icons/vue';
 import HeroStat from './HeroStat.vue';
 
@@ -53,11 +52,11 @@ const stats = [
 <style scoped>
 .hero-patterns {
   background-image:
-    radial-gradient(circle at 50% 120%, rgba(var(--tw-color-flip-it-orange-rgb), 0.1), transparent),
+    radial-gradient(circle at 50% 120%, rgba(var(--color-primary-rgb), 0.1), transparent),
     linear-gradient(to right, #e2e8f0 1px, transparent 1px),
     linear-gradient(to bottom, #e2e8f0 1px, transparent 1px),
-    radial-gradient(circle at 0% 0%, rgba(var(--tw-color-flip-it-orange-rgb), 0.05), transparent 400px),
-    radial-gradient(circle at 100% 50%, rgba(var(--tw-color-flip-it-orange-rgb), 0.05), transparent 400px);
+    radial-gradient(circle at 0% 0%, rgba(var(--color-primary-rgb), 0.05), transparent 400px),
+    radial-gradient(circle at 100% 50%, rgba(var(--color-primary-rgb), 0.05), transparent 400px);
   background-size: 100% 100%, 4rem 4rem, 4rem 4rem, 100% 100%, 100% 100%;
 }
 
