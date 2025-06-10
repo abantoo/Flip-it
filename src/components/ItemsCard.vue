@@ -17,8 +17,8 @@
           <h1
             class="px-2 py-1 w-fit rounded shadow-sm shadow-slate-300 text-sm"
             :class="{
-              'bg-yellow-400': condition === 'Used',
-              'bg-green-400': condition === 'New', 
+              'bg-primary': condition === 'Used',
+              'bg-success': condition === 'New', 
             }"
           >
             {{ props.condition }}
