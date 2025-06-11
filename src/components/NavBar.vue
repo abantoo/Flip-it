@@ -9,7 +9,7 @@
         <!-- Logo -->
         <RouterLink to="/" class="shrink-0 group relative">
           <img class="h-8 lg:h-10 transition-transform duration-300 group-hover:scale-105 contrast-125" src="../assets/logo.png" :alt="`${appConfig.appName}-bd`" />
-          <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></div>
+          <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
         </RouterLink>
 
         <!-- Search Bar -->
@@ -30,7 +30,7 @@
             </button>
             <button class="relative group p-2 rounded-full hover:bg-slate-100 transition-colors text-slate-600 hover:text-slate-900" aria-label="Shopping Cart">
               <PhShoppingCart :size="24" weight="duotone" />
-              <span class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-amber-500 text-[10px] font-bold text-white ring-2 ring-white">0</span>
+              <span class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white ring-2 ring-white">0</span>
               <span class="absolute top-10 right-1/2 translate-x-1/2 px-2 py-1 bg-white text-xs text-slate-900 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-slate-200 shadow-md">Cart</span>
             </button>
           </div>
