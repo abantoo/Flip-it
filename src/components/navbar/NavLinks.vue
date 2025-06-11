@@ -4,24 +4,24 @@
       v-for="link in navLinks"
       :key="link.path"
       :to="link.path"
-      class="relative py-2 transition-all duration-300 hover:text-amber-300 group"
-      :class="{ 'text-amber-300': isActive(link.name) }"
+      class="relative py-2 transition-all duration-300 hover:text-accent group"
+      :class="{ 'text-accent': isActive(link.name) }"
     >
       {{ link.label }}
       <!-- Hover/Active Underline -->
       <span 
-        class="absolute -bottom-1 left-0 h-0.5 bg-amber-400 transition-all duration-300"
+        class="absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300"
         :class="isActive(link.name) ? 'w-full' : 'w-0 group-hover:w-full'"
       ></span>
     </RouterLink>
 
     <!-- Contact Link -->
     <button
-      class="relative py-2 transition-all duration-300 hover:text-amber-300 group"
+      class="relative py-2 transition-all duration-300 hover:text-accent group"
       @click="$emit('open-contact')"
     >
       Contact
-      <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+      <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
     </button>
   </div>
 </template>
