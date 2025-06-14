@@ -30,9 +30,9 @@
           ©{{ new Date().getFullYear() }} {{ `${appConfig.appName}` }} Ltd | All rights reserved.
         </p>
         <div class="flex gap-8 text-slate-600 text-sm">
-          <a href="#" class="hover:text-amber-600 transition-colors">Privacy Policy</a>
-          <a href="#" class="hover:text-amber-600 transition-colors">Terms of Service</a>
-          <a href="#" class="hover:text-amber-600 transition-colors">Refund Policy</a>
+          <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-primary transition-colors">Refund Policy</a>
         </div>
       </div>
     </div>
