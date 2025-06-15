@@ -12,7 +12,7 @@
       <div class="flex gap-6">
         <a href="#" class="opacity-70 hover:opacity-100 transition-opacity">Track Order</a>
         <a href="#" class="opacity-70 hover:opacity-100 transition-opacity">Store Locator</a>
-        <a href="#" class="opacity-70 hover:opacity-100 transition-opacity font-bold text-amber-400">Join Rewards</a>
+        <a href="#" class="opacity-70 hover:opacity-100 transition-opacity font-bold text-primary">Join Rewards</a>
       </div>
     </div>
   </div>
