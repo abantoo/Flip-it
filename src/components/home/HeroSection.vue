@@ -53,11 +53,10 @@ const stats = [
 .hero-patterns {
   background-image:
     radial-gradient(circle at 50% 120%, rgba(var(--color-primary-rgb), 0.1), transparent),
-    linear-gradient(to right, #e2e8f0 1px, transparent 1px),
-    linear-gradient(to bottom, #e2e8f0 1px, transparent 1px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M0 45.4C1.5 45.3 3.1 45.2 4.6 45.1C23.6 43.6 40.5 32.7 48.7 15.1C50 12.3 51 9.4 51.7 6.4C52 5 52.3 3.6 52.5 2.1C52.7 0.7 52.8-0.7 53 0.7C53.2 2.1 53.5 3.5 53.8 4.9C54.8 9.1 56.4 13.1 58.7 16.7C67.5 30.5 82.2 39.5 98.2 41.5C98.8 41.6 99.4 41.6 100 41.7V42.3C99.4 42.2 98.8 42.2 98.2 42.1C82 40.1 67 31 58 17.1C55.7 13.5 54.1 9.5 53.1 5.3C52.8 3.9 52.5 2.5 52.3 1.1C52.1 2.5 51.8 3.9 51.5 5.3C50.8 8.4 49.8 11.4 48.5 14.3C40.2 32.2 23.1 43.2 3.9 44.7C2.6 44.8 1.3 44.8 0 44.9V45.4Z' fill='%230f172a' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E"),
     radial-gradient(circle at 0% 0%, rgba(var(--color-primary-rgb), 0.05), transparent 400px),
     radial-gradient(circle at 100% 50%, rgba(var(--color-primary-rgb), 0.05), transparent 400px);
-  background-size: 100% 100%, 4rem 4rem, 4rem 4rem, 100% 100%, 100% 100%;
+  background-size: 100% 100%, 10rem 10rem, 100% 100%, 100% 100%;
 }
 
 @keyframes fade-in {
