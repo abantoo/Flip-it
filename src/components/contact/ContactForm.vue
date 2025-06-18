@@ -1,6 +1,6 @@
 <template>
-  <form @submit.prevent="handleSubmit" class="space-y-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <form @submit.prevent="handleSubmit" class="space-y-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <BaseInput
         v-model="form.name"
         label="Full Name"
@@ -18,27 +18,20 @@
       />
     </div>
 
-    <BaseInput
-      v-model="form.subject"
-      label="Subject"
-      placeholder="How can we help?"
-      id="contact-subject"
-      required
-    />
 
     <BaseTextarea
       v-model="form.message"
       label="Message"
       placeholder="Your message here..."
       id="contact-message"
-      :rows="5"
+      :rows="3"
       required
     />
 
-    <div class="flex items-center justify-end pt-4">
-      <BaseButton type="submit" :disabled="isSubmitting">
-        <PhPaperPlaneTilt v-if="!isSubmitting" :size="20" weight="bold" />
-        <span v-else class="w-5 h-5 border-2 border-slate-200 border-t-white rounded-full animate-spin"></span>
+    <div class="flex items-center justify-end pt-2">
+      <BaseButton type="submit" :disabled="isSubmitting" size="md">
+        <PhPaperPlaneTilt v-if="!isSubmitting" :size="18" weight="bold" />
+        <span v-else class="w-4 h-4 border-2 border-slate-200 border-t-white rounded-full animate-spin"></span>
         {{ isSubmitting ? 'Sending...' : 'Send Message' }}
       </BaseButton>
     </div>
@@ -56,7 +49,6 @@ const isSubmitting = ref(false);
 const form = reactive({
   name: '',
   email: '',
-  subject: '',
   message: ''
 });
 
@@ -70,7 +62,6 @@ const handleSubmit = async () => {
   Object.assign(form, {
     name: '',
     email: '',
-    subject: '',
     message: ''
   });
   alert('Thank you for your message! We will get back to you soon.');
