@@ -1,30 +1,18 @@
 <template>
-  <div class="h-full bg-slate-50/50 backdrop-blur-md border border-slate-200 p-8 rounded-2xl">
-    <h3 class="text-xl font-bold text-slate-900 mb-6">Contact Information</h3>
+  <div class="relative h-full bg-slate-50/50 backdrop-blur-md border-y border-r border-slate-200 p-6 rounded-tr-2xl rounded-l-none rounded-br-none overflow-hidden">
+    <TopographyPattern color="var(--color-primary)" :opacity="0.1" size="300px" />
     
-    <div class="space-y-6">
-      <div v-for="item in contactDetails" :key="item.label" class="flex items-start gap-4 group cursor-default">
-        <div class="p-3 rounded-xl bg-amber-100 text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
-          <component :is="item.icon" :size="24" weight="duotone" />
+    <div class="relative z-10 space-y-4">
+      <h3 class="text-lg font-bold text-slate-900 mb-4">Contact Information</h3>
+      
+      <div v-for="item in contactDetails" :key="item.label" class="flex items-start gap-3 group cursor-default">
+        <div class="p-2.5 rounded-xl bg-amber-100 text-amber-600 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300">
+          <component :is="item.icon" :size="22" weight="duotone" />
         </div>
         <div>
-          <p class="text-sm font-medium text-slate-500">{{ item.label }}</p>
-          <p class="text-slate-800 font-semibold group-hover:text-amber-600 transition-colors">{{ item.value }}</p>
+          <p class="text-[11px] font-medium text-slate-500 uppercase tracking-wider">{{ item.label }}</p>
+          <p class="text-sm text-slate-800 font-semibold group-hover:text-amber-600 transition-colors">{{ item.value }}</p>
         </div>
-      </div>
-    </div>
-
-    <div class="mt-12">
-      <h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">Follow Us</h4>
-      <div class="flex gap-4">
-        <a 
-          v-for="social in socialLinks" 
-          :key="social.name"
-          href="#" 
-          class="p-3 rounded-xl bg-white border border-slate-200 text-slate-500 hover:text-amber-600 hover:border-amber-500/50 hover:bg-amber-50 transition-all duration-300 shadow-sm"
-        >
-          <component :is="social.icon" :size="20" weight="bold" />
-        </a>
       </div>
     </div>
   </div>
@@ -34,23 +22,13 @@
 import { 
   PhEnvelope, 
   PhPhone, 
-  PhMapPin, 
-  PhFacebookLogo, 
-  PhTwitterLogo, 
-  PhInstagramLogo, 
-  PhLinkedinLogo 
+  PhMapPin
 } from '@phosphor-icons/vue';
+import TopographyPattern from '../ui/TopographyPattern.vue';
 
 const contactDetails = [
   { label: 'Email', value: 'support@flipit.bd', icon: PhEnvelope },
   { label: 'Phone', value: '+880 1234-567890', icon: PhPhone },
   { label: 'Office', value: 'Gulshan, Dhaka, Bangladesh', icon: PhMapPin }
-];
-
-const socialLinks = [
-  { name: 'Facebook', icon: PhFacebookLogo },
-  { name: 'Twitter', icon: PhTwitterLogo },
-  { name: 'Instagram', icon: PhInstagramLogo },
-  { name: 'LinkedIn', icon: PhLinkedinLogo }
 ];
 </script>
