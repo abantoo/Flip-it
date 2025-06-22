@@ -8,22 +8,22 @@
           :key="office.name"
           class="flex items-start gap-3 group"
         >
-          <div class="w-10 h-10 shrink-0 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 transition-all duration-300">
+          <div class="w-10 h-10 shrink-0 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-primary group-hover:border-primary/30 transition-all duration-300">
             <component :is="office.logo" :size="20" weight="bold" />
           </div>
           <div class="flex flex-col">
             <span class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-0.5">{{ office.name }}</span>
-            <span class="text-slate-500 text-sm leading-relaxed">{{ office.location }}</span>
+            <span class="text-slate-400 text-sm leading-relaxed">{{ office.location }}</span>
           </div>
         </div>
 
         <div class="flex items-start gap-3 group mt-2"> 
-          <div class="w-10 h-10 shrink-0 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 transition-all duration-300">
+          <div class="w-10 h-10 shrink-0 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-primary group-hover:border-primary/30 transition-all duration-300">
             <PhEnvelopeSimple :size="20" weight="bold" /> 
           </div>
           <div class="flex flex-col">
             <span class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-0.5">Contact Support</span>
-            <span class="text-slate-500 text-sm leading-relaxed">{{ email }}</span>
+            <span class="text-slate-400 text-sm leading-relaxed">{{ email }}</span>
           </div>
         </div>
       </div>

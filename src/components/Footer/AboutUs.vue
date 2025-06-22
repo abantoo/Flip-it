@@ -2,10 +2,10 @@
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
     <div class="lg:col-span-1">
       <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-        <PhInfo :size="20" class="text-amber-400" />
+        <PhInfo :size="20" class="text-primary" />
         About {{ `${appConfig.appName}` }}
       </h4>
-      <p class="text-slate-500 text-sm leading-relaxed">
+      <p class="text-slate-400 text-sm leading-relaxed">
         We are Bangladesh's first dedicated marketplace for verified second-hand tech. Our mission is to make high-end computing accessible to everyone while ensuring quality through expert verification.
       </p>
     </div>
@@ -15,8 +15,8 @@
         <h4 class="text-white font-bold mb-6">Company</h4>
         <ul class="flex flex-col gap-3">
           <li v-for="option in companyLinks" :key="option.name">
-            <a href="#" class="text-slate-500 hover:text-amber-400 text-sm transition-colors duration-300 flex items-center gap-2 group">
-              <span class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-amber-400 transition-colors"></span>
+            <a href="#" class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group">
+              <span class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"></span>
               {{ option.name }}
             </a>
           </li>
@@ -27,8 +27,8 @@
         <h4 class="text-white font-bold mb-6">Support</h4>
         <ul class="flex flex-col gap-3">
           <li v-for="option in supportLinks" :key="option.name">
-            <a href="#" class="text-slate-500 hover:text-amber-400 text-sm transition-colors duration-300 flex items-center gap-2 group">
-              <span class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-amber-400 transition-colors"></span>
+            <a href="#" class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group">
+              <span class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"></span>
               {{ option.name }}
             </a>
           </li>
@@ -39,8 +39,8 @@
         <h4 class="text-white font-bold mb-6">Resources</h4>
         <ul class="flex flex-col gap-3">
           <li v-for="option in resourceLinks" :key="option.name">
-            <a href="#" class="text-slate-500 hover:text-amber-400 text-sm transition-colors duration-300 flex items-center gap-2 group">
-              <span class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-amber-400 transition-colors"></span>
+            <a href="#" class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group">
+              <span class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"></span>
               {{ option.name }}
             </a>
           </li>
