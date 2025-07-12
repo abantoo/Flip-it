@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-slate-950 border-t border-slate-900 pt-20 pb-10">
+  <footer class="w-full bg-slate-950 border-t border-slate-900 pt-20 pb-10">
     <div class="container mx-auto px-4 lg:px-10">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <!-- Brand Section -->

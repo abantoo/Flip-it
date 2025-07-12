@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden lg:flex items-center gap-6 font-semibold text-sm tracking-wide uppercase text-slate-100">
+  <div class="hidden lg:flex items-center gap-6 font-semibold text-sm tracking-wide uppercase text-slate-800">
     <RouterLink
       v-for="link in navLinks"
       :key="link.path"
