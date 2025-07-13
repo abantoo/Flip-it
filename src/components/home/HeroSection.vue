@@ -1,10 +1,10 @@
 <template>
   <section 
-    class="w-full mb-16 overflow-hidden rounded-[2.5rem] bg-slate-50 border border-slate-200 shadow-sm flex flex-col min-h-[600px] lg:h-[700px] relative"
+    class="w-full mb-16 overflow-hidden rounded-[2.5rem] bg-slate-50 border border-slate-200 shadow-sm flex flex-col min-h-[600px] md:min-h-[400px] relative"
   >
     <TopographyPattern color="var(--color-primary)" :opacity="0.08" size="600px" />
     
-    <div class="relative z-10 flex-grow flex flex-col items-center justify-center px-6 text-center pt-16">
+    <div class="relative z-10 flex-grow flex flex-col items-center justify-center px-6 text-center pt-10 pb-4">
       <h1 class="text-5xl md:text-7xl font-black text-slate-900 tracking-tight mb-4 max-w-4xl">
         Level Up Your Rig with 
         <span class="text-transparent bg-clip-text bg-[var(--gradient-primary)] mt-4">
@@ -16,7 +16,7 @@
         Premium 2nd-hand and brand new components verified by experts. The smartest way to build your dream PC in Bangladesh.
       </p>
 
-      <div class="flex flex-col sm:flex-row items-center gap-8 w-full max-w-md animate-float pt-4">
+      <div class="flex flex-col sm:flex-row items-center gap-8 w-full max-w-md pt-4">
         <BaseButton 
           variant="primary" 
           size="lg" 
@@ -36,7 +36,7 @@
     </div>
 
     <!-- Quick Stats -->
-    <div class="mt-auto hidden lg:flex justify-between items-center px-20 pb-14">
+    <div class="mt-auto hidden lg:flex justify-between items-center px-20 pb-10">
       <HeroStat 
         v-for="stat in stats" 
         :key="stat.label"

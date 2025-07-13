@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 lg:px-10 pb-10 pt-4 max-w-[1440px] mx-auto animate-fade-in">
+  <div class="px-4 lg:px-10 pb-4 pt-4 max-w-[1440px] mx-auto animate-fade-in">
     <!-- Hero Section -->
     <HeroSection />
 
