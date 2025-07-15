@@ -3,11 +3,13 @@
     class="flex flex-col items-center min-h-screen font-montserrat" 
     :style="themeStyles"
   >
-    <NavBar @open-contact="showContactModal = true" />
-    <div class="container py-8 flex-grow">
-      <RouterView/>
+    <NavBar class="w-full" @open-contact="showContactModal = true" />
+    <div class="w-full flex-grow flex justify-center">
+      <div class="container py-6">
+        <RouterView/>
+      </div>
     </div>
-    <MainFooter @open-contact="showContactModal = true" />
+    <MainFooter class="w-full" @open-contact="showContactModal = true" />
 
     <!-- Global Contact Modal -->
     <ContactModal :show="showContactModal" @close="showContactModal = false" />

@@ -25,10 +25,11 @@ import {
   PhMapPin
 } from '@phosphor-icons/vue';
 import TopographyPattern from '../ui/TopographyPattern.vue';
+import { appConfig } from '../../config';
 
 const contactDetails = [
-  { label: 'Email', value: 'support@flipit.bd', icon: PhEnvelope },
-  { label: 'Phone', value: '+880 1234-567890', icon: PhPhone },
-  { label: 'Office', value: 'Gulshan, Dhaka, Bangladesh', icon: PhMapPin }
+  { label: 'Email', value: appConfig.supportEmail, icon: PhEnvelope },
+  { label: 'Phone', value: appConfig.supportPhone, icon: PhPhone },
+  { label: 'Office', value: appConfig.headOffice, icon: PhMapPin }
 ];
 </script>

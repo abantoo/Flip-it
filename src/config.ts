@@ -21,6 +21,7 @@ export interface AppConfig {
   headOffice: string;
   corporateOffice: string;
   supportEmail: string;
+  supportPhone: string;
   themes: Record<string, ThemeConfig>;
 }
 
