@@ -30,10 +30,7 @@
     <!-- Content Area -->
     <span class="relative flex items-center justify-center gap-2 text-slate-900 whitespace-nowrap">
       <template v-if="loading">
-        <svg class="animate-spin h-5 w-5 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-        </svg>
+        <LoadingIcon />
       </template>
       <template v-else>
         <component 
@@ -58,6 +55,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import LoadingIcon from './icons/LoadingIcon.vue';
 
 interface Props {
   variant?: 'primary' | 'secondary' | 'accent' | 'outline' | 'ghost' | 'success';
@@ -116,26 +114,32 @@ const sizeClasses = {
 const variantClasses = {
   primary: {
     bg: 'bg-primary',
+    main: 'bg-primary group-hover:-translate-x-1 group-hover:-translate-y-1',
     border: 'border-slate-900'
   },
   secondary: {
     bg: 'bg-secondary',
+    main: 'bg-secondary group-hover:-translate-x-1 group-hover:-translate-y-1',
     border: 'border-slate-900'
   },
   accent: {
     bg: 'bg-accent',
+    main: 'bg-accent group-hover:-translate-x-1 group-hover:-translate-y-1',
     border: 'border-slate-900'
   },
   outline: {
-    bg: 'bg-white',
+    bg: 'bg-slate-900',
+    main: 'bg-white group-hover:-translate-x-1 group-hover:-translate-y-1',
     border: 'border-slate-900'
   },
   ghost: {
-    bg: 'bg-slate-50',
-    border: 'border-slate-200 shadow-sm translate-x-0 translate-y-0 group-hover:-translate-x-1 group-hover:-translate-y-1'
+    bg: 'bg-primary/20',
+    main: 'bg-slate-50 group-hover:-translate-x-1 group-hover:-translate-y-1',
+    border: 'border-slate-200 shadow-sm'
   },
   success: {
     bg: 'bg-success',
+    main: 'bg-success group-hover:-translate-x-1 group-hover:-translate-y-1',
     border: 'border-slate-900'
   }
 };
