@@ -1,9 +1,9 @@
 <template>
   <AuthLayout 
     title="Welcome Back" 
-    subtitle="Securely sign in to your FlipIt account"
+    subtitle="Securely sign in to your FlipIt account and continue your journey"
   >
-    <form @submit.prevent="handleLogin" class="space-y-6">
+    <form @submit.prevent="handleLogin" class="space-y-6 py-2">
       <BaseInput
         v-model="email"
         label="Email Address"
@@ -27,9 +27,12 @@
           <input type="checkbox" class="w-4 h-4 border-2 border-slate-900 rounded-none checked:bg-primary transition-colors" />
           <span class="text-sm font-bold text-slate-700 group-hover:text-slate-900">Remember me</span>
         </label>
-        <a href="#" class="text-sm font-bold text-primary hover:text-slate-900 transition-colors underline decoration-2 underline-offset-4">
+        <RouterLink 
+          to="/forgot-password" 
+          class="text-sm font-bold text-primary hover:text-slate-900 transition-colors underline decoration-2 underline-offset-4"
+        >
           Forgot password?
-        </a>
+        </RouterLink>
       </div>
 
       <BaseButton 
