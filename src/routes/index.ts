@@ -17,6 +17,16 @@ import {
       component: () => import("../views/AboutUs.vue")
     },
     {
+      path: '/login',
+      name: 'login',
+      component: () => import("../views/auth/LoginView.vue")
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import("../views/auth/RegisterView.vue")
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'Error',
       component: () => import('../views/ErrorPage.vue'),
