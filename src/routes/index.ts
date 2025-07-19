@@ -27,6 +27,11 @@ import {
       component: () => import("../views/auth/RegisterView.vue")
     },
     {
+      path: '/forgot-password',
+      name: 'forgot-password',
+      component: () => import("../views/auth/ForgotPasswordView.vue")
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'Error',
       component: () => import('../views/ErrorPage.vue'),
