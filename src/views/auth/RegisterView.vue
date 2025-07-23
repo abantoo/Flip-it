@@ -1,9 +1,9 @@
 <template>
   <AuthLayout 
     title="Create Account" 
-    subtitle="Join our community and start flipping"
+    subtitle="Join the FlipIt community and unlock exclusive tech deals"
   >
-    <form @submit.prevent="handleRegister" class="space-y-6">
+    <form @submit.prevent="handleRegister" class="space-y-6 py-2">
       <BaseInput
         v-model="name"
         label="Full Name"
