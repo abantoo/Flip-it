@@ -62,7 +62,7 @@
         </div>
       </div>
 
-      <SocialAuthButton @click="handleGoogleLogin" />
+      <SimpleGoogleButton @click="handleGoogleLogin" />
     </form>
 
     <template #footer>
@@ -85,7 +85,7 @@ import { PhUser, PhEnvelope, PhLock } from '@phosphor-icons/vue';
 import AuthLayout from '../../components/auth/AuthLayout.vue';
 import BaseInput from '../../components/ui/BaseInput.vue';
 import BaseButton from '../../components/ui/BaseButton.vue';
-import SocialAuthButton from '../../components/ui/SocialAuthButton.vue';
+import SimpleGoogleButton from '../../components/ui/SimpleGoogleButton.vue';
 
 const name = ref('');
 const email = ref('');
