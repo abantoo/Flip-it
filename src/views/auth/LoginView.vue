@@ -1,7 +1,7 @@
 <template>
   <AuthLayout 
     title="Welcome Back" 
-    subtitle="Securely sign in to your FlipIt account and continue your journey"
+    :subtitle="`Securely sign in to your ${appConfig.appName} account and continue your journey`"
   >
     <form @submit.prevent="handleLogin" class="space-y-6 py-2">
       <BaseInput
@@ -77,6 +77,9 @@ import AuthLayout from '../../components/auth/AuthLayout.vue';
 import BaseInput from '../../components/ui/BaseInput.vue';
 import BaseButton from '../../components/ui/BaseButton.vue';
 import SimpleGoogleButton from '../../components/ui/SimpleGoogleButton.vue';
+import {
+  appConfig,
+} from '../../config';
 
 const email = ref('');
 const password = ref('');
