@@ -1,7 +1,7 @@
 <template>
   <AuthLayout 
     title="Create Account" 
-    subtitle="Join the FlipIt community and unlock exclusive tech deals"
+    :subtitle="`Join the ${appConfig.appName} community and unlock exclusive tech deals`"
   >
     <form @submit.prevent="handleRegister" class="space-y-6 py-2">
       <BaseInput
@@ -86,6 +86,9 @@ import AuthLayout from '../../components/auth/AuthLayout.vue';
 import BaseInput from '../../components/ui/BaseInput.vue';
 import BaseButton from '../../components/ui/BaseButton.vue';
 import SimpleGoogleButton from '../../components/ui/SimpleGoogleButton.vue';
+import {
+  appConfig,
+} from '../../config';
 
 const name = ref('');
 const email = ref('');
