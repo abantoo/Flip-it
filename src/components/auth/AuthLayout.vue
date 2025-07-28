@@ -1,11 +1,5 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-slate-50 relative overflow-hidden p-4">
-    <!-- Background Patterns -->
-    <div class="absolute inset-0 opacity-10 pointer-events-none">
-      <div class="absolute top-0 -left-4 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
-      <div class="absolute top-0 -right-4 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
-    </div>
-
+  <div class="flex items-center justify-center bg-slate-50 relative overflow-hidden p-4">
     <!-- Main Container -->
     <div class="max-w-5xl w-full relative z-10 flex flex-col lg:flex-row bg-white border-4 border-slate-900 shadow-[12px_12px_0px_0px_rgba(15,23,42,1)] overflow-hidden min-h-[550px]">
       <!-- Left Column: Branding -->
