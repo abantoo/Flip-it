@@ -100,7 +100,6 @@ const handleRegister = () => {
   // Simulate API call
   setTimeout(() => {
     loading.value = false;
-    alert('Account created successfully (simulated)');
   }, 1500);
 };
 
