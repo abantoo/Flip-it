@@ -1,12 +1,9 @@
 <template>
-  <div 
-    class="flex flex-col items-center min-h-screen font-montserrat" 
-    :style="themeStyles"
-  >
+  <div class="flex flex-col items-center min-h-screen font-montserrat" :style="themeStyles">
     <NavBar class="w-full" @open-contact="showContactModal = true" />
     <div class="w-full flex-grow flex justify-center">
       <div class="container py-6">
-        <RouterView/>
+        <RouterView />
       </div>
     </div>
     <MainFooter class="w-full" @open-contact="showContactModal = true" />
@@ -35,7 +32,7 @@ const hexToRgb = (hex: string) => {
 const themeStyles = computed(() => {
   const theme = appConfig.theme;
   const themeData = appConfig.themes[theme];
-  
+
   if (!themeData) return {};
 
   return {
@@ -58,7 +55,7 @@ const themeStyles = computed(() => {
     '--color-text': themeData.text,
     '--gradient-primary': themeData.gradient,
     'background-color': 'var(--color-background)',
-    'color': 'var(--color-text)',
+    color: 'var(--color-text)',
   };
 });
 </script>
