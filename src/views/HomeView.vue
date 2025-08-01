@@ -5,8 +5,8 @@
 
     <!-- Categories -->
     <section class="mb-20">
-      <SectionHeader 
-        title="Browse by Category" 
+      <SectionHeader
+        title="Browse by Category"
         subtitle="Find exactly what your build needs"
         description="From the latest CPUs to high-performance GPUs, explore our verified collection of premium components."
         to="/categories"
@@ -16,8 +16,8 @@
 
     <!-- Featured Products -->
     <section class="mb-20">
-      <SectionHeader 
-        title="Latest Arrivals" 
+      <SectionHeader
+        title="Latest Arrivals"
         subtitle="Recently added premium components"
         description="Don't miss out on these newly listed gems. Every item is verified for quality and performance."
         to="/products"
@@ -46,8 +46,14 @@ import TrustSection from '../components/home/TrustSection.vue';
 
 <style scoped>
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .animate-fade-in {
   animation: fade-in 0.7s ease-out forwards;
