@@ -1,6 +1,6 @@
 <template>
-  <AuthLayout 
-    title="Reset Password" 
+  <AuthLayout
+    title="Reset Password"
     subtitle="Enter your email to receive a secure password reset link. We'll help you get back into your account in seconds."
   >
     <form @submit.prevent="handleResetRequest" class="space-y-8 py-4">
@@ -13,21 +13,16 @@
         required
       />
 
-      <BaseButton 
-        type="submit" 
-        variant="primary" 
-        class="w-full py-4 text-lg"
-        :loading="loading"
-      >
+      <BaseButton type="submit" variant="primary" class="w-full py-4 text-lg" :loading="loading">
         Send Reset Link
       </BaseButton>
     </form>
 
     <template #footer>
       <p class="text-slate-600 font-medium text-center">
-        Remembered your password? 
-        <RouterLink 
-          to="/login" 
+        Remembered your password?
+        <RouterLink
+          to="/login"
           class="text-primary font-black hover:text-slate-900 transition-colors ml-1 underline decoration-2 underline-offset-4"
         >
           Sign in here
