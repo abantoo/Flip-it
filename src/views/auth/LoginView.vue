@@ -1,6 +1,6 @@
 <template>
-  <AuthLayout 
-    title="Welcome Back" 
+  <AuthLayout
+    title="Welcome Back"
     :subtitle="`Securely sign in to your ${appConfig.appName} account and continue your journey`"
   >
     <form @submit.prevent="handleLogin" class="space-y-6 py-2">
@@ -12,7 +12,7 @@
         :icon="PhEnvelope"
         required
       />
-      
+
       <BaseInput
         v-model="password"
         label="Password"
@@ -24,23 +24,23 @@
 
       <div class="flex items-center justify-between">
         <label class="flex items-center gap-2 cursor-pointer group">
-          <input type="checkbox" class="w-4 h-4 border-2 border-slate-900 rounded-none checked:bg-primary transition-colors" />
-          <span class="text-sm font-bold text-slate-700 group-hover:text-slate-900">Remember me</span>
+          <input
+            type="checkbox"
+            class="w-4 h-4 border-2 border-slate-900 rounded-none checked:bg-primary transition-colors"
+          />
+          <span class="text-sm font-bold text-slate-700 group-hover:text-slate-900"
+            >Remember me</span
+          >
         </label>
-        <RouterLink 
-          to="/forgot-password" 
+        <RouterLink
+          to="/forgot-password"
           class="text-sm font-bold text-primary hover:text-slate-900 transition-colors underline decoration-2 underline-offset-4"
         >
           Forgot password?
         </RouterLink>
       </div>
 
-      <BaseButton 
-        type="submit" 
-        variant="primary" 
-        class="w-full py-4 text-lg"
-        :loading="loading"
-      >
+      <BaseButton type="submit" variant="primary" class="w-full py-4 text-lg" :loading="loading">
         Sign In
       </BaseButton>
 
@@ -49,7 +49,9 @@
           <div class="w-full border-t-2 border-slate-100"></div>
         </div>
         <div class="relative flex justify-center text-sm">
-          <span class="px-3 bg-white text-slate-500 font-bold uppercase tracking-wider">Or continue with</span>
+          <span class="px-3 bg-white text-slate-500 font-bold uppercase tracking-wider"
+            >Or continue with</span
+          >
         </div>
       </div>
 
@@ -58,9 +60,9 @@
 
     <template #footer>
       <p class="text-slate-600 font-medium">
-        Don't have an account? 
-        <RouterLink 
-          to="/register" 
+        Don't have an account?
+        <RouterLink
+          to="/register"
           class="text-primary font-black hover:text-slate-900 transition-colors ml-1 underline decoration-2 underline-offset-4"
         >
           Create an account
@@ -77,9 +79,7 @@ import AuthLayout from '../../components/auth/AuthLayout.vue';
 import BaseInput from '../../components/ui/BaseInput.vue';
 import BaseButton from '../../components/ui/BaseButton.vue';
 import SimpleGoogleButton from '../../components/ui/SimpleGoogleButton.vue';
-import {
-  appConfig,
-} from '../../config';
+import { appConfig } from '../../config';
 
 const email = ref('');
 const password = ref('');
