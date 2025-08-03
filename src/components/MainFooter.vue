@@ -5,10 +5,15 @@
         <!-- Brand Section -->
         <div class="flex flex-col gap-6">
           <RouterLink to="/" class="w-fit">
-            <img class="h-10 transition-transform duration-300 hover:scale-105 brightness-0 invert" src="../assets/logo.png" :alt="`${appConfig.appName}`" />
+            <img
+              class="h-10 transition-transform duration-300 hover:scale-105 brightness-0 invert"
+              src="../assets/logo.png"
+              :alt="`${appConfig.appName}`"
+            />
           </RouterLink>
           <p class="text-slate-400 text-sm leading-relaxed max-w-xs">
-            Bangladesh's premier marketplace for verified tech components. Build your dream setup with confidence.
+            Bangladesh's premier marketplace for verified tech components. Build your dream setup
+            with confidence.
           </p>
         </div>
 
@@ -25,7 +30,9 @@
       </div>
 
       <!-- Copyright -->
-      <div class="border-t border-slate-900 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div
+        class="border-t border-slate-900 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
         <p class="text-slate-500 text-sm">
           ©{{ new Date().getFullYear() }} {{ `${appConfig.appName}` }} Ltd | All rights reserved.
         </p>
@@ -40,8 +47,8 @@
 </template>
 
 <script lang="ts" setup>
-import { appConfig } from "../config";
-import StayConnected from "./Footer/StayConnected.vue";
-import AboutUs from "./Footer/AboutUs.vue";
-import NewsLetter from "./Footer/NewsLetter.vue";
+import { appConfig } from '../config';
+import StayConnected from './Footer/StayConnected.vue';
+import AboutUs from './Footer/AboutUs.vue';
+import NewsLetter from './Footer/NewsLetter.vue';
 </script>
