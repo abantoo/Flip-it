@@ -1,5 +1,7 @@
 <template>
-  <div class="hidden lg:flex items-center gap-6 font-semibold text-sm tracking-wide uppercase text-slate-800">
+  <div
+    class="hidden lg:flex items-center gap-6 font-semibold text-sm tracking-wide uppercase text-slate-800"
+  >
     <RouterLink
       v-for="link in navLinks"
       :key="link.path"
@@ -9,7 +11,7 @@
     >
       {{ link.label }}
       <!-- Hover/Active Underline -->
-      <span 
+      <span
         class="absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300"
         :class="isActive(link.name) ? 'w-full' : 'w-0 group-hover:w-full'"
       ></span>
@@ -21,13 +23,15 @@
       @click="$emit('open-contact')"
     >
       Contact
-      <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+      <span
+        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+      ></span>
     </button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useRouter } from "vue-router";
+import { useRouter } from 'vue-router';
 
 defineEmits(['open-contact']);
 
