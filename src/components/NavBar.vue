@@ -1,5 +1,7 @@
 <template>
-  <header class="w-full sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+  <header
+    class="w-full sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300"
+  >
     <!-- Top Bar -->
     <TopBar />
 
@@ -8,8 +10,14 @@
       <div class="max-w-[1440px] w-full flex items-center justify-between gap-8">
         <!-- Logo -->
         <RouterLink to="/" class="shrink-0 group relative">
-          <img class="h-8 lg:h-10 transition-transform duration-300 group-hover:scale-105 contrast-125" src="../assets/logo.png" :alt="`${appConfig.appName}-bd`" />
-          <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></div>
+          <img
+            class="h-8 lg:h-10 transition-transform duration-300 group-hover:scale-105 contrast-125"
+            src="../assets/logo.png"
+            :alt="`${appConfig.appName}-bd`"
+          />
+          <div
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+          ></div>
         </RouterLink>
 
         <!-- Search Bar -->
@@ -21,21 +29,28 @@
 
           <!-- Icons -->
           <div class="flex items-center gap-4 border-l border-slate-200 pl-6 h-6">
-            <button class="relative group p-2 rounded-full hover:bg-slate-100 transition-colors text-slate-700 hover:text-slate-900" aria-label="Search mobile only md:hidden">
+            <button
+              class="relative group p-2 rounded-full hover:bg-slate-100 transition-colors text-slate-700 hover:text-slate-900"
+              aria-label="Search mobile only md:hidden"
+            >
               <PhMagnifyingGlass :size="24" class="md:hidden" />
             </button>
-            <BaseButton 
-              to="/login" 
-              variant="ghost" 
-              size="sm"
-              class="!py-2 !px-4"
-            >
+            <BaseButton to="/login" variant="ghost" size="sm" class="!py-2 !px-4">
               Sign In
             </BaseButton>
-            <button class="relative group p-2 rounded-full hover:bg-slate-100 transition-colors text-slate-700 hover:text-slate-900" aria-label="Shopping Cart">
+            <button
+              class="relative group p-2 rounded-full hover:bg-slate-100 transition-colors text-slate-700 hover:text-slate-900"
+              aria-label="Shopping Cart"
+            >
               <PhShoppingCart :size="24" weight="duotone" />
-              <span class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white ring-2 ring-white">0</span>
-              <span class="absolute top-10 right-1/2 translate-x-1/2 px-2 py-1 bg-white text-xs text-slate-900 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-slate-200 shadow-md">Cart</span>
+              <span
+                class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white ring-2 ring-white"
+                >0</span
+              >
+              <span
+                class="absolute top-10 right-1/2 translate-x-1/2 px-2 py-1 bg-white text-xs text-slate-900 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-slate-200 shadow-md"
+                >Cart</span
+              >
             </button>
           </div>
         </div>
@@ -47,10 +62,7 @@
 <script setup lang="ts">
 import { appConfig } from '../config';
 defineEmits(['open-contact']);
-import {
-  PhShoppingCart,
-  PhMagnifyingGlass
-} from '@phosphor-icons/vue';
+import { PhShoppingCart, PhMagnifyingGlass } from '@phosphor-icons/vue';
 import TopBar from './navbar/TopBar.vue';
 import SearchBar from './navbar/SearchBar.vue';
 import NavLinks from './navbar/NavLinks.vue';
