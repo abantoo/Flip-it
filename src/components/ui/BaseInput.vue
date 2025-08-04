@@ -1,28 +1,19 @@
 <template>
   <div class="w-full">
-    <label 
-      v-if="label" 
-      :for="id" 
-      class="block text-sm font-bold text-slate-700 mb-2 ml-1"
-    >
+    <label v-if="label" :for="id" class="block text-sm font-bold text-slate-700 mb-2 ml-1">
       {{ label }}
     </label>
-    
+
     <div class="relative group">
       <!-- Shadow background -->
-      <div 
+      <div
         class="absolute inset-0 bg-slate-900 translate-x-1 translate-y-1 transition-transform group-focus-within:translate-x-0 group-focus-within:translate-y-0"
       ></div>
-      
+
       <!-- Input container -->
       <div class="relative flex items-center bg-white border-2 border-slate-900 px-4 py-3">
-        <component 
-          v-if="icon" 
-          :is="icon" 
-          :size="20" 
-          class="text-slate-500 mr-3"
-        />
-        
+        <component v-if="icon" :is="icon" :size="20" class="text-slate-500 mr-3" />
+
         <input
           :id="id"
           :type="inputType"
@@ -32,7 +23,7 @@
           class="w-full bg-transparent outline-none text-slate-900 placeholder:text-slate-400 font-medium"
           @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
         />
-        
+
         <!-- Toggle Password Visibility -->
         <button
           v-if="type === 'password'"
@@ -44,7 +35,7 @@
         </button>
       </div>
     </div>
-    
+
     <p v-if="error" class="mt-2 text-xs font-bold text-red-500 ml-1">
       {{ error }}
     </p>
