@@ -26,7 +26,7 @@ const glowClasses = {
 </script>
 
 <template>
-  <span 
+  <span
     class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase border transition-all duration-200"
     :class="[variants[variant], glow ? glowClasses[variant] : '']"
   >

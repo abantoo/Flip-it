@@ -7,10 +7,16 @@
     <span v-if="oldPrice" class="ml-2 text-xs text-slate-500 line-through decoration-slate-600">
       ৳{{ oldPrice.toLocaleString() }}
     </span>
-    <span v-if="suffix" class="ml-1 text-[10px] font-bold text-slate-500 uppercase tracking-tighter">
+    <span
+      v-if="suffix"
+      class="ml-1 text-[10px] font-bold text-slate-500 uppercase tracking-tighter"
+    >
       {{ suffix }}
     </span>
-    <span v-if="discountPercent" class="ml-3 px-1.5 py-0.5 rounded-md bg-rose-500/10 text-rose-500 text-[10px] font-black uppercase tracking-wider border border-rose-500/20">
+    <span
+      v-if="discountPercent"
+      class="ml-3 px-1.5 py-0.5 rounded-md bg-rose-500/10 text-rose-500 text-[10px] font-black uppercase tracking-wider border border-rose-500/20"
+    >
       -{{ discountPercent }}%
     </span>
   </div>
