@@ -1,15 +1,23 @@
 <template>
   <div class="flex items-center justify-center bg-slate-50 relative overflow-hidden p-4">
     <!-- Main Container -->
-    <div class="max-w-5xl w-full relative z-10 flex flex-col lg:flex-row bg-white border-4 border-slate-900 shadow-[12px_12px_0px_0px_rgba(15,23,42,1)] overflow-hidden min-h-[550px]">
+    <div
+      class="max-w-5xl w-full relative z-10 flex flex-col lg:flex-row bg-white border-4 border-slate-900 shadow-[12px_12px_0px_0px_rgba(15,23,42,1)] overflow-hidden min-h-[550px]"
+    >
       <!-- Left Column: Branding -->
-      <div class="lg:w-1/2 p-8 lg:p-12 bg-slate-50 text-slate-900 flex flex-col justify-between relative overflow-hidden">
+      <div
+        class="lg:w-1/2 p-8 lg:p-12 bg-slate-50 text-slate-900 flex flex-col justify-between relative overflow-hidden"
+      >
         <!-- Topography Background -->
         <TopographyPattern color="var(--color-primary)" :opacity="0.12" size="500px" />
-        
+
         <div class="relative z-10">
           <RouterLink to="/" class="inline-block mb-12 group">
-            <img class="h-10 lg:h-12 transition-transform duration-300 group-hover:scale-105" src="../../assets/logo.png" alt="FlipIt Logo" />
+            <img
+              class="h-10 lg:h-12 transition-transform duration-300 group-hover:scale-105"
+              src="../../assets/logo.png"
+              alt="FlipIt Logo"
+            />
           </RouterLink>
 
           <div class="space-y-4">
@@ -50,10 +58,18 @@ defineProps<{
 
 <style scoped>
 @keyframes blob {
-  0% { transform: translate(0px, 0px) scale(1); }
-  33% { transform: translate(30px, -50px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
-  100% { transform: translate(0px, 0px) scale(1); }
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
 }
 .animate-blob {
   animation: blob 7s infinite;
