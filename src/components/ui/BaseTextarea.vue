@@ -14,7 +14,9 @@
         @input="$emit('update:modelValue', ($event.target as HTMLTextAreaElement).value)"
       ></textarea>
       <!-- Active Border Glow -->
-      <div class="absolute inset-0 rounded-xl border border-amber-500/0 group-focus-within:border-amber-500/30 transition-all duration-300 pointer-events-none"></div>
+      <div
+        class="absolute inset-0 rounded-xl border border-amber-500/0 group-focus-within:border-amber-500/30 transition-all duration-300 pointer-events-none"
+      ></div>
     </div>
   </div>
 </template>
@@ -31,7 +33,7 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
   rows: 4,
-  required: false
+  required: false,
 });
 
 defineEmits(['update:modelValue']);
