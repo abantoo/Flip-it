@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'flip-it-orange': 'var(--color-primary)',
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
-        tertiary: 'var(--color-tertiary)',
-        accent: 'var(--color-accent)',
-        success: 'var(--color-success)',
-        warning: 'var(--color-warning)',
-        info: 'var(--color-info)',
+        'brand-orange': 'var(--color-primary)',
+        'brand-primary': 'var(--color-primary)',
+        'brand-secondary': 'var(--color-secondary)',
+        'brand-tertiary': 'var(--color-tertiary)',
+        'brand-accent': 'var(--color-accent)',
+        'brand-success': 'var(--color-success)',
+        'brand-warning': 'var(--color-warning)',
+        'brand-info': 'var(--color-info)',
       },
     },
     extend: {
