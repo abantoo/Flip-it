@@ -18,12 +18,14 @@
     <!-- Footer: Social Links -->
     <div class="px-8 py-2 bg-slate-50 border-t border-slate-100">
       <div class="flex items-center justify-between">
-        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Follow our journey</span>
+        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest"
+          >Follow our journey</span
+        >
         <div class="flex gap-3">
-          <a 
-            v-for="social in socialLinks" 
+          <a
+            v-for="social in socialLinks"
             :key="social.name"
-            href="#" 
+            href="#"
             class="p-2.5 rounded-xl bg-white border border-slate-200 text-slate-500 hover:text-amber-600 hover:border-amber-500/50 hover:bg-amber-50 transition-all duration-300 shadow-sm"
           >
             <component :is="social.icon" :size="18" weight="bold" />
@@ -39,11 +41,11 @@ import BaseModal from '../ui/BaseModal.vue';
 import ContactHeader from './ContactHeader.vue';
 import ContactForm from './ContactForm.vue';
 import ContactInfoCard from './ContactInfoCard.vue';
-import { 
-  PhFacebookLogo, 
-  PhTwitterLogo, 
-  PhInstagramLogo, 
-  PhLinkedinLogo 
+import {
+  PhFacebookLogo,
+  PhTwitterLogo,
+  PhInstagramLogo,
+  PhLinkedinLogo,
 } from '@phosphor-icons/vue';
 
 defineProps<{
@@ -56,6 +58,6 @@ const socialLinks = [
   { name: 'Facebook', icon: PhFacebookLogo },
   { name: 'Twitter', icon: PhTwitterLogo },
   { name: 'Instagram', icon: PhInstagramLogo },
-  { name: 'LinkedIn', icon: PhLinkedinLogo }
+  { name: 'LinkedIn', icon: PhLinkedinLogo },
 ];
 </script>
