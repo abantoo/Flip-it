@@ -1,12 +1,9 @@
 <template>
-  <div 
+  <div
     class="absolute inset-0 pointer-events-none topography-pattern-container"
     :style="containerStyle"
   >
-    <div 
-      class="w-full h-full topography-pattern-mask"
-      :style="maskStyle"
-    ></div>
+    <div class="w-full h-full topography-pattern-mask" :style="maskStyle"></div>
   </div>
 </template>
 
@@ -22,12 +19,12 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   color: 'var(--color-primary)',
   opacity: 0.08,
-  size: '600px'
+  size: '600px',
 });
 
 const containerStyle = computed(() => ({
   opacity: props.opacity,
-  zIndex: 0
+  zIndex: 0,
 }));
 
 const maskStyle = computed(() => ({
@@ -37,7 +34,7 @@ const maskStyle = computed(() => ({
   maskSize: props.size,
   WebkitMaskImage: `url('/src/assets/topography.svg')`,
   WebkitMaskRepeat: 'repeat',
-  WebkitMaskSize: props.size
+  WebkitMaskSize: props.size,
 }));
 </script>
 
