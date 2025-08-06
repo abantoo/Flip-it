@@ -1,24 +1,26 @@
 <template>
-  <div class="flex flex-col gap-4 rounded-md p-4 sm:max-w-[296px] shadow-sm shadow-slate-300 border border-slate-300/20 bg-slate-100">
+  <div
+    class="flex flex-col gap-4 rounded-md p-4 sm:max-w-[296px] shadow-sm shadow-slate-300 border border-slate-300/20 bg-slate-100"
+  >
     <h1>{{ props.title }}</h1>
     <div class="w-full flex sm:flex-col justify-between gap-2">
       <div class="bg-pattern">
-        <img 
-          class="h-36 min-w-36 sm:h-48 lg:w-full object-contain w-36 md:w-48 rounded border border-slate-300/60 shadow-md shadow-slate-300" 
-          :src="props.image" alt="" />
+        <img
+          class="h-36 min-w-36 sm:h-48 lg:w-full object-contain w-36 md:w-48 rounded border border-slate-300/60 shadow-md shadow-slate-300"
+          :src="props.image"
+          alt=""
+        />
       </div>
       <div class="px-2 flex flex-col">
         <div class="flex justify-between items-center">
-          <h1
-            class="text-black rounded"
-          >
+          <h1 class="text-black rounded">
             {{ props.price }}
           </h1>
           <h1
             class="px-2 py-1 w-fit rounded shadow-sm shadow-slate-300 text-sm"
             :class="{
               'bg-primary': condition === 'Used',
-              'bg-success': condition === 'New', 
+              'bg-success': condition === 'New',
             }"
           >
             {{ props.condition }}
@@ -26,9 +28,7 @@
         </div>
         <h1 class="text-start text-sm font-light">{{ props.description }}</h1>
       </div>
-      
     </div>
-    
   </div>
 </template>
 
