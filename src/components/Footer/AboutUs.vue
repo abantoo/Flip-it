@@ -6,7 +6,9 @@
         About {{ `${appConfig.appName}` }}
       </h4>
       <p class="text-slate-400 text-sm leading-relaxed">
-        We are Bangladesh's first dedicated marketplace for verified second-hand tech. Our mission is to make high-end computing accessible to everyone while ensuring quality through expert verification.
+        We are Bangladesh's first dedicated marketplace for verified second-hand tech. Our mission
+        is to make high-end computing accessible to everyone while ensuring quality through expert
+        verification.
       </p>
     </div>
 
@@ -15,8 +17,13 @@
         <h4 class="text-white font-bold mb-6">Company</h4>
         <ul class="flex flex-col gap-3">
           <li v-for="option in companyLinks" :key="option.name">
-            <a href="#" class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group">
-              <span class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"></span>
+            <a
+              href="#"
+              class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group"
+            >
+              <span
+                class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"
+              ></span>
               {{ option.name }}
             </a>
           </li>
@@ -27,8 +34,13 @@
         <h4 class="text-white font-bold mb-6">Support</h4>
         <ul class="flex flex-col gap-3">
           <li v-for="option in supportLinks" :key="option.name">
-            <a href="#" class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group">
-              <span class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"></span>
+            <a
+              href="#"
+              class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group"
+            >
+              <span
+                class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"
+              ></span>
               {{ option.name }}
             </a>
           </li>
@@ -39,8 +51,13 @@
         <h4 class="text-white font-bold mb-6">Resources</h4>
         <ul class="flex flex-col gap-3">
           <li v-for="option in resourceLinks" :key="option.name">
-            <a href="#" class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group">
-              <span class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"></span>
+            <a
+              href="#"
+              class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group"
+            >
+              <span
+                class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"
+              ></span>
               {{ option.name }}
             </a>
           </li>
@@ -54,17 +71,9 @@
 import { appConfig } from '../../config';
 import { PhInfo } from '@phosphor-icons/vue';
 
-const companyLinks = [
-  { name: 'Our Team' },
-  { name: 'Career' },
-  { name: 'Partners' },
-];
+const companyLinks = [{ name: 'Our Team' }, { name: 'Career' }, { name: 'Partners' }];
 
-const supportLinks = [
-  { name: 'Online Delivery' },
-  { name: 'Help Center' },
-  { name: 'Contact Us' },
-];
+const supportLinks = [{ name: 'Online Delivery' }, { name: 'Help Center' }, { name: 'Contact Us' }];
 
 const resourceLinks = [
   { name: 'Blog' },
