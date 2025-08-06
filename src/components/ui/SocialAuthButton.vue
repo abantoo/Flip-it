@@ -1,9 +1,5 @@
 <template>
-  <BaseButton
-    variant="outline"
-    class="w-full"
-    @click="$emit('click')"
-  >
+  <BaseButton variant="outline" class="w-full" @click="$emit('click')">
     <div class="flex items-center justify-center gap-3">
       <GoogleIcon />
       <span>Sign in with Google</span>
