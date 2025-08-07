@@ -1,7 +1,15 @@
 <template>
   <div class="flex items-baseline gap-1 font-montserrat">
-    <span class="text-xs font-bold text-amber-400">৳</span>
-    <span :class="sizeClasses[size]" class="font-extrabold tracking-tight text-white">
+    <span class="text-xs font-bold text-brand-orange">৳</span>
+    <span
+      :class="{
+        'text-sm': size === 'sm',
+        'text-lg': size === 'md',
+        'text-2xl': size === 'lg',
+        'text-4xl': size === 'xl',
+      }"
+      class="font-extrabold tracking-tight text-white"
+    >
       {{ formattedPrice }}
     </span>
     <span v-if="oldPrice" class="ml-2 text-xs text-slate-500 line-through decoration-slate-600">
@@ -39,11 +47,4 @@ const formattedPrice = computed(() => {
   const val = typeof props.value === 'string' ? parseFloat(props.value) : props.value;
   return val.toLocaleString();
 });
-
-const sizeClasses = {
-  sm: 'text-sm',
-  md: 'text-lg',
-  lg: 'text-2xl',
-  xl: 'text-4xl',
-};
 </script>
