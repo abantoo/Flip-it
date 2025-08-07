@@ -5,7 +5,12 @@
     :class="[
       'relative group inline-flex items-center justify-center font-bold transition-all duration-300',
       'cursor-pointer disabled:cursor-not-allowed disabled:opacity-50',
-      sizeClasses[size],
+      {
+        'px-4 py-2 text-sm': size === 'sm',
+        'px-6 py-3 text-base': size === 'md',
+        'px-8 py-4 text-lg': size === 'lg',
+        'px-10 py-5 text-xl': size === 'xl',
+      },
       className,
     ]"
     @click="$emit('click', $event)"
@@ -13,22 +18,43 @@
     <!-- Background Offset Shadow -->
     <span
       :class="[
-        'absolute inset-0 w-full h-full transition-transform duration-300 ease-out transform -translate-x-2 -translate-y-2',
-        variantClasses[variant].bg,
+        'absolute inset-0 w-full h-full transition-transform duration-300 ease-out transform translate-x-1 translate-y-1',
+        {
+          'bg-[#50115F]':
+            variant === 'primary' ||
+            variant === 'secondary' ||
+            variant === 'accent' ||
+            variant === 'outline',
+          'bg-brand-primary/20': variant === 'ghost',
+          'bg-brand-success': variant === 'success',
+        },
         disabled || loading ? '' : 'group-hover:translate-x-0 group-hover:translate-y-0',
       ]"
     ></span>
 
-    <!-- Border Frame -->
+    <!-- Border Frame (Main Button Body) -->
     <span
       :class="[
-        'absolute inset-0 w-full h-full border-2 border-slate-900',
-        variantClasses[variant].border,
+        'absolute inset-0 w-full h-full border-2 transition-transform duration-300 ease-out',
+        {
+          'bg-[#FF707A] border-slate-900': variant === 'primary',
+          'bg-[#50115F] border-slate-900': variant === 'secondary',
+          'bg-brand-accent border-slate-900': variant === 'accent',
+          'bg-white border-slate-900': variant === 'outline',
+          'bg-slate-50 border-slate-200 shadow-sm': variant === 'ghost',
+          'bg-brand-success border-slate-900': variant === 'success',
+        },
+        disabled || loading ? '' : 'group-hover:-translate-x-0 group-hover:-translate-y-0',
       ]"
     ></span>
 
     <!-- Content Area -->
-    <span class="relative flex items-center justify-center gap-2 text-slate-900 whitespace-nowrap">
+    <span
+      :class="[
+        'relative flex items-center justify-center gap-2 text-slate-900 whitespace-nowrap transition-transform duration-300 ease-out',
+        disabled || loading ? '' : 'group-hover:-translate-x-0 group-hover:-translate-y-0',
+      ]"
+    >
       <template v-if="loading">
         <LoadingIcon />
       </template>
@@ -54,7 +80,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, type Component } from 'vue';
 import LoadingIcon from './icons/LoadingIcon.vue';
 
 interface Props {
@@ -66,7 +92,7 @@ interface Props {
   disabled?: boolean;
   loading?: boolean;
   class?: string;
-  icon?: any;
+  icon?: Component;
   iconPosition?: 'left' | 'right';
 }
 
@@ -87,7 +113,7 @@ const componentTag = computed(() => {
 });
 
 const componentProps = computed(() => {
-  const p: any = {};
+  const p: Record<string, string | object | boolean | undefined> = {};
   if (props.to) p.to = props.to;
   if (props.href) p.href = props.href;
   if (componentTag.value === 'button') {
@@ -100,51 +126,10 @@ const componentProps = computed(() => {
 const className = computed(() => props.class);
 
 const iconSize = computed(() => {
-  const sizes = { sm: 16, md: 20, lg: 24, xl: 28 };
+  const sizes: Record<string, number> = { sm: 16, md: 20, lg: 24, xl: 28 };
   return sizes[props.size];
 });
-
-const sizeClasses = {
-  sm: 'px-4 py-2 text-sm',
-  md: 'px-6 py-3 text-base',
-  lg: 'px-8 py-4 text-lg',
-  xl: 'px-10 py-5 text-xl',
-};
-
-const variantClasses = {
-  primary: {
-    bg: 'bg-primary',
-    main: 'bg-primary group-hover:-translate-x-1 group-hover:-translate-y-1',
-    border: 'border-slate-900',
-  },
-  secondary: {
-    bg: 'bg-secondary',
-    main: 'bg-secondary group-hover:-translate-x-1 group-hover:-translate-y-1',
-    border: 'border-slate-900',
-  },
-  accent: {
-    bg: 'bg-accent',
-    main: 'bg-accent group-hover:-translate-x-1 group-hover:-translate-y-1',
-    border: 'border-slate-900',
-  },
-  outline: {
-    bg: 'bg-slate-900',
-    main: 'bg-white group-hover:-translate-x-1 group-hover:-translate-y-1',
-    border: 'border-slate-900',
-  },
-  ghost: {
-    bg: 'bg-primary/20',
-    main: 'bg-slate-50 group-hover:-translate-x-1 group-hover:-translate-y-1',
-    border: 'border-slate-200 shadow-sm',
-  },
-  success: {
-    bg: 'bg-success',
-    main: 'bg-success group-hover:-translate-x-1 group-hover:-translate-y-1',
-    border: 'border-slate-900',
-  },
-};
 </script>
-
 <style scoped>
 /* Individual transition for shadow */
 .transform {
