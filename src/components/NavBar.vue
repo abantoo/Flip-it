@@ -16,7 +16,7 @@
             :alt="`${appConfig.appName}-bd`"
           />
           <div
-            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all duration-300 group-hover:w-full"
           ></div>
         </RouterLink>
 
@@ -35,7 +35,7 @@
             >
               <PhMagnifyingGlass :size="24" class="md:hidden" />
             </button>
-            <BaseButton to="/login" variant="ghost" size="sm" class="!py-2 !px-4">
+            <BaseButton to="/login" variant="outline" size="sm" class="!py-2 !px-4">
               Sign In
             </BaseButton>
             <button
@@ -44,7 +44,7 @@
             >
               <PhShoppingCart :size="24" weight="duotone" />
               <span
-                class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white ring-2 ring-white"
+                class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-brand-primary text-[10px] font-bold text-white ring-2 ring-white"
                 >0</span
               >
               <span
