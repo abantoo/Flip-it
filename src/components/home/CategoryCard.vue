@@ -1,7 +1,7 @@
 <template>
   <RouterLink
     :to="to"
-    class="group relative h-40 overflow-hidden rounded-2xl bg-slate-800 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10"
+    class="group relative h-40 overflow-hidden rounded-2xl bg-slate-800 transition-all duration-500 hover:shadow-2xl hover:shadow-brand-primary/10"
   >
     <!-- Background Gradient Overlay -->
     <div
@@ -18,7 +18,7 @@
     <!-- Content -->
     <div class="absolute inset-0 z-20 flex flex-col justify-end p-5">
       <div
-        class="mb-1 inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary opacity-0 transition-all duration-500 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0"
+        class="mb-1 inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-brand-primary opacity-0 transition-all duration-500 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0"
       >
         Browse Collection
       </div>
@@ -34,7 +34,7 @@
       class="absolute top-0 right-0 p-4 z-20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
     >
       <div
-        class="p-1.5 rounded-full bg-primary text-slate-900 transition-transform duration-500 group-hover:rotate-45"
+        class="p-1.5 rounded-full bg-brand-primary text-slate-900 transition-transform duration-500 group-hover:rotate-45"
       >
         <PhArrowUpRight :size="16" weight="bold" />
       </div>
