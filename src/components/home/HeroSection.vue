@@ -2,7 +2,9 @@
   <section
     class="w-full mb-16 overflow-hidden rounded-[2.5rem] bg-slate-50 border border-slate-200 shadow-sm flex flex-col min-h-[600px] md:min-h-[400px] relative"
   >
-    <TopographyPattern color="var(--color-primary)" :opacity="0.08" size="600px" />
+    <TopographyPattern color="var(--color-primary)" :opacity="0.1" size="600px" />
+
+    <HeroMarquee />
 
     <div
       class="relative z-10 flex-grow flex flex-col items-center justify-center px-6 text-center pt-10 pb-4"
@@ -39,6 +41,7 @@
 <script setup lang="ts">
 import { PhArrowRight } from '@phosphor-icons/vue';
 import HeroStat from './HeroStat.vue';
+import HeroMarquee from './HeroMarquee.vue';
 import BaseButton from '../ui/BaseButton.vue';
 import TopographyPattern from '../ui/TopographyPattern.vue';
 
