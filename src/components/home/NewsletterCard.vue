@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative overflow-hidden rounded-[2.5rem] bg-[var(--gradient-primary)] p-1 shadow-2xl shadow-primary/10"
+    class="relative overflow-hidden rounded-[2.5rem] bg-[var(--gradient-primary)] p-1 shadow-2xl shadow-brand-primary/10"
   >
     <div
       class="flex flex-col md:flex-row items-center justify-between gap-8 px-8 py-12 bg-slate-900 rounded-[2.3rem]"
@@ -22,18 +22,18 @@
             type="email"
             placeholder="your@email.com"
             required
-            class="flex-1 px-6 py-4 rounded-2xl bg-slate-800 border border-slate-700 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all font-medium"
+            class="flex-1 px-6 py-4 rounded-2xl bg-slate-800 border border-slate-700 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all font-medium"
           />
           <button
             type="submit"
-            class="px-8 py-4 rounded-2xl bg-primary text-slate-950 font-extrabold transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20"
+            class="px-8 py-4 rounded-2xl bg-brand-primary text-slate-950 font-extrabold transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-brand-primary/20"
           >
             Subscribe
           </button>
         </form>
 
         <div v-else class="flex flex-col items-center sm:items-start animate-fade-in">
-          <div class="flex items-center gap-3 text-primary mb-2">
+          <div class="flex items-center gap-3 text-brand-primary mb-2">
             <PhCheckCircle :size="32" weight="fill" />
             <span class="text-xl font-black text-white">You're on the list!</span>
           </div>
@@ -52,7 +52,7 @@
 
       <!-- Decorative Element -->
       <div
-        class="absolute -top-12 -right-12 w-48 h-48 bg-primary/5 blur-[60px] rounded-full pointer-events-none"
+        class="absolute -top-12 -right-12 w-48 h-48 bg-brand-primary/5 blur-[60px] rounded-full pointer-events-none"
       ></div>
     </div>
   </div>
