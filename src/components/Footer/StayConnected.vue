@@ -5,7 +5,7 @@
       <div class="flex flex-col gap-4">
         <div v-for="office in offices" :key="office.name" class="flex items-start gap-3 group">
           <div
-            class="w-10 h-10 shrink-0 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-primary group-hover:border-primary/30 transition-all duration-300"
+            class="w-10 h-10 shrink-0 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-brand-primary group-hover:border-brand-primary/30 transition-all duration-300"
           >
             <component :is="office.logo" :size="20" weight="bold" />
           </div>
@@ -19,7 +19,7 @@
 
         <div class="flex items-start gap-3 group mt-2">
           <div
-            class="w-10 h-10 shrink-0 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-primary group-hover:border-primary/30 transition-all duration-300"
+            class="w-10 h-10 shrink-0 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 group-hover:text-brand-primary group-hover:border-brand-primary/30 transition-all duration-300"
           >
             <PhEnvelopeSimple :size="20" weight="bold" />
           </div>
