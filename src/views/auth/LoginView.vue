@@ -26,7 +26,7 @@
         <label class="flex items-center gap-2 cursor-pointer group">
           <input
             type="checkbox"
-            class="w-4 h-4 border-2 border-slate-900 rounded-none checked:bg-primary transition-colors"
+            class="w-4 h-4 border-2 border-slate-900 rounded-none checked:bg-brand-primary transition-colors"
           />
           <span class="text-sm font-bold text-slate-700 group-hover:text-slate-900"
             >Remember me</span
@@ -34,7 +34,7 @@
         </label>
         <RouterLink
           to="/forgot-password"
-          class="text-sm font-bold text-primary hover:text-slate-900 transition-colors underline decoration-2 underline-offset-4"
+          class="text-sm font-bold text-brand-primary hover:text-slate-900 transition-colors underline decoration-2 underline-offset-4"
         >
           Forgot password?
         </RouterLink>
@@ -63,7 +63,7 @@
         Don't have an account?
         <RouterLink
           to="/register"
-          class="text-primary font-black hover:text-slate-900 transition-colors ml-1 underline decoration-2 underline-offset-4"
+          class="text-brand-primary font-black hover:text-slate-900 transition-colors ml-1 underline decoration-2 underline-offset-4"
         >
           Create an account
         </RouterLink>
