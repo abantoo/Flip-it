@@ -23,7 +23,7 @@
         Remembered your password?
         <RouterLink
           to="/login"
-          class="text-primary font-black hover:text-slate-900 transition-colors ml-1 underline decoration-2 underline-offset-4"
+          class="text-brand-primary font-black hover:text-slate-900 transition-colors ml-1 underline decoration-2 underline-offset-4"
         >
           Sign in here
         </RouterLink>
