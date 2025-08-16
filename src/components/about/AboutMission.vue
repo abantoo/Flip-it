@@ -31,13 +31,15 @@
 
         <!-- Content Area -->
         <div class="w-full lg:w-1/2">
-          <h2 class="text-lg font-bold text-primary uppercase tracking-[0.2em] mb-4">
+          <h2 class="text-lg font-bold text-brand-primary uppercase tracking-[0.2em] mb-4">
             Our Mission
           </h2>
           <h3 class="text-4xl md:text-5xl font-black text-slate-900 mb-8 leading-tight">
             Building a
-            <span class="underline decoration-primary/30 underline-offset-8">Sustainable</span> Tech
-            Ecosystem
+            <span class="underline decoration-brand-primary/30 underline-offset-8"
+              >Sustainable</span
+            >
+            Tech Ecosystem
           </h3>
           <p class="text-lg text-slate-600 leading-relaxed mb-8">
             Our mission is to reduce electronic waste and empower the local tech community in
@@ -50,7 +52,7 @@
               :key="item"
               class="flex items-center gap-3 text-slate-700 font-medium"
             >
-              <PhCheckCircle :size="24" class="text-primary" weight="fill" />
+              <PhCheckCircle :size="24" class="text-brand-primary" weight="fill" />
               {{ item }}
             </li>
           </ul>
