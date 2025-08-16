@@ -4,7 +4,7 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
         <div v-for="stat in stats" :key="stat.label" class="text-center group">
           <div
-            class="inline-flex p-4 rounded-2xl bg-slate-50 text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:-translate-y-2"
+            class="inline-flex p-4 rounded-2xl bg-slate-50 text-brand-primary mb-4 group-hover:bg-brand-primary group-hover:text-white transition-all duration-500 transform group-hover:-translate-y-2"
           >
             <component :is="stat.icon" :size="32" weight="duotone" />
           </div>
