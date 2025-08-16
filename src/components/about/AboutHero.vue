@@ -5,7 +5,7 @@
     <div class="container relative z-10 mx-auto px-6 text-center">
       <h1 class="text-5xl md:text-7xl font-black text-slate-900 mb-8 leading-[1.1]">
         Empowering Bangladesh's <br />
-        <span class="text-primary">Tech Enthusiasts</span>
+        <span class="text-brand-primary">Tech Enthusiasts</span>
       </h1>
 
       <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-12">
