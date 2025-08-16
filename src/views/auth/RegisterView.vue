@@ -36,7 +36,7 @@
           <input
             type="checkbox"
             required
-            class="mt-1 w-5 h-5 border-2 border-slate-900 rounded-none checked:bg-primary transition-colors"
+            class="mt-1 w-5 h-5 border-2 border-slate-900 rounded-none checked:bg-brand-primary transition-colors"
           />
           <span class="text-sm font-medium text-slate-600 group-hover:text-slate-900 leading-tight">
             I agree to the
@@ -69,7 +69,7 @@
         Already have an account?
         <RouterLink
           to="/login"
-          class="text-primary font-black hover:text-slate-900 transition-colors ml-1 underline decoration-2 underline-offset-4"
+          class="text-brand-primary font-black hover:text-slate-900 transition-colors ml-1 underline decoration-2 underline-offset-4"
         >
           Sign in here
         </RouterLink>
