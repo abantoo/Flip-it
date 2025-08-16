@@ -2,7 +2,7 @@
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
     <div class="lg:col-span-1">
       <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-        <PhInfo :size="20" class="text-primary" />
+        <PhInfo :size="20" class="text-brand-primary" />
         About {{ `${appConfig.appName}` }}
       </h4>
       <p class="text-slate-400 text-sm leading-relaxed">
@@ -19,10 +19,10 @@
           <li v-for="option in companyLinks" :key="option.name">
             <a
               href="#"
-              class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group"
+              class="text-slate-400 hover:text-brand-primary text-sm transition-colors duration-300 flex items-center gap-2 group"
             >
               <span
-                class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"
+                class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-brand-primary transition-colors"
               ></span>
               {{ option.name }}
             </a>
@@ -36,10 +36,10 @@
           <li v-for="option in supportLinks" :key="option.name">
             <a
               href="#"
-              class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group"
+              class="text-slate-400 hover:text-brand-primary text-sm transition-colors duration-300 flex items-center gap-2 group"
             >
               <span
-                class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"
+                class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-brand-primary transition-colors"
               ></span>
               {{ option.name }}
             </a>
@@ -53,10 +53,10 @@
           <li v-for="option in resourceLinks" :key="option.name">
             <a
               href="#"
-              class="text-slate-400 hover:text-primary text-sm transition-colors duration-300 flex items-center gap-2 group"
+              class="text-slate-400 hover:text-brand-primary text-sm transition-colors duration-300 flex items-center gap-2 group"
             >
               <span
-                class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-primary transition-colors"
+                class="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-brand-primary transition-colors"
               ></span>
               {{ option.name }}
             </a>
